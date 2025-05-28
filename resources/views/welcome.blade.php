@@ -35,6 +35,8 @@
         opacity: 0.85;
       }
     }
+
+	
 </style>
 <!-- START HOME -->
 <div id="fw_al_007" class="carousel ps_rotate_scale_c ps_indicators_l ps_control_rotate_f swipe_x ps_easeOutQuint" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
@@ -465,53 +467,7 @@
 <!-- END BLOG -->
 
 <!-- START QUOTE -->
-<section class="quote_area section-padding">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-7 col-sm-12 col-xs-12">
-				<div class="quote">
-					<h2>Get A Free Quote</h2>
-					<form class="form">
-						<div class="row">
-							<div class="form-group col-md-6">
-								<input type="text" name="name" class="form-control" placeholder="Name" required="required">
-							</div>
-							<div class="form-group col-md-6">
-								<input type="email" name="email" class="form-control" placeholder="Email" required="required">
-							</div>
-							<div class="form-group col-md-6">
-								<input type="text" name="phone" class="form-control" placeholder="Phone" required="required">
-							</div>
-							<div class="form-group col-md-6">
-								<input type="text" name="subject" class="form-control" placeholder="Website" required="required">
-							</div>
-							<div class="form-group col-md-12">
-								<select class="form-select" aria-label="Default select example">
-									<option selected>Choose A Service</option>
-									<option value="1">Digital Marketing</option>
-									<option value="2">Social Marketing</option>
-									<option value="3">Content Marketing</option>
-									<option value="3">E-mail Marketing</option>
-								</select>
-							</div>
-							<div class="form-group col-md-12">
-								<textarea rows="6" name="message" class="form-control" placeholder="Your Message" required="required"></textarea>
-							</div>
-							<div class="col-md-12 text-center">
-								<button type="submit" value="Send message" name="submit" id="submitButton" class="btn btn-lg contact_btn" title="Submit Your Message!">Send Message</button>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div><!-- END COL  -->
-			<div class="col-lg-5 col-sm-12 col-xs-12">
-				<div class="video_btn">
-					<a class="video-play" href="https://www.youtube.com/watch?v=alswD2tCc_Q"><span></span></a>
-				</div>
-			</div><!-- END COL  -->
-		</div><!-- END ROW -->
-	</div><!-- END CONTAINER -->
-</section>
+
 <!-- END QUOTE -->
 
 <!-- START TESTIMONIAL -->

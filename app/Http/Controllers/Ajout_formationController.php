@@ -48,7 +48,7 @@ class Ajout_formationController extends Controller
         $formations = $query->paginate(6);
  $actualites = Actualite::latest()->take(3)->get();
         // Assure-toi d'envoyer la bonne variable à la vue
-        return view('formation', compact('formations','actualites'));
+        return view('partial.formation', compact('formations','actualites'));
     }
 
     public function create()

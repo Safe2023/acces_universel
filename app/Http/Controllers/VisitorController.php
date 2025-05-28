@@ -16,7 +16,6 @@ class VisitorController extends Controller
     public function index()
     {
         $totalInscrits = Inscription_formation::count();
-        $inscrits = Inscription_formation::all()->groupBy('formation_id');
         $suscriptions = Newsletter::all()->count();
         $today = Visitor::whereDate('created_at', Carbon::today())->count();
 
@@ -26,7 +25,7 @@ class VisitorController extends Controller
 
         $year = Visitor::whereYear('created_at', Carbon::now()->year)->count();
 
-        return view('home', compact('today', 'month', 'year', 'suscriptions', 'inscrits', 'totalInscrits'));
+        return view('home', compact('today', 'month', 'year', 'suscriptions', 'totalInscrits'));
     }
 
     /**

@@ -1,5 +1,46 @@
 @extends('layouts.header')
 @section('content')
+
+<style>
+	.oigtr {
+		text-align: center;
+		font-size: 20px;
+		color: #f99828;
+		text-transform: uppercase;
+	}
+	.breadcrumb-area {
+    background-image: url(assets/img/bg/section-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 200px; /* ou auto, ou min-height */
+}
+
+@media (max-width: 768px) {
+    .breadcrumb-area {
+        height: 150px; /* hauteur réduite en mobile */
+    }
+}
+</style>
+<section class="section-top breadcrumb-area" style="background-image: url(assets/img/au/contact.jpeg);  background-size:cover; background-position: center center;">
+    <div class="container">
+    <div class="col-lg-12 col-sm-12 col-xs-12 text-center">
+                <div class="inner-content clearfix">
+                    <div class="title wow slideInDown animated" data-wow-delay="0.3s" data-wow-duration="1500ms">
+                        <h1>Nos Actualités</h1>
+                    </div>
+                    <div class="border-box"></div>
+                    <div class="breadcrumb-menu wow slideInUp animated" data-wow-delay="0.3s" data-wow-duration="1500ms">
+                        <ul class="clearfix">
+                            <li><a href="{{url('/')}}">Accueil</a></li>
+                            <li><i class="fa fa-angle-double-right" aria-hidden="true"></i></li>
+                            <li class="active">Actualités</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+
 <div class="row">
 	<div class="col-md-12 text-center mt-5 mb-5">
 		<div class="section-title">

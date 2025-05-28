@@ -37,7 +37,7 @@
 
                     <div class="col-md-12">
                         <label for="inputAddress" class="form-label">Titre</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Nom de la formation" name="nom" value=" $formation->nom}}">
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Nom de la formation" name="nom" value=" {{$formation->nom}}">
                     </div>
 
                     <div class="col-md-6">

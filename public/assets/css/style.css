@@ -160,7 +160,7 @@ width: 50px;
 
 /*02. START TOP HEADER DESIGN*/
 .logo-contact {
-	padding: 10px 0;
+	padding: 7px;
 	background: #000000;
 }
 @media only screen and (max-width:960px) {
@@ -174,9 +174,10 @@ width: 50px;
 	margin-top: 5px;
 	display: inline-block;
 }
-.single-top-contact {margin-top:6px;}
+.single-top-contact {margin-top:6px; }
 @media only screen and (max-width:880px) { 
 .single-top-contact{margin-bottom:30px;}
+
 }
 .single-top-contact i {
 	color: #fff;
@@ -190,7 +191,7 @@ font-size: 15px;
 color: #f99828;
 margin-bottom: 0px;
 overflow: hidden;
-padding-top: 3px;
+padding-top: 5px;
 font-family: 'Poppins', sans-serif;
 }
 /*TOP SOCIAL PROFILES*/
@@ -3366,7 +3367,7 @@ width:150px;
 	font-size: 20px;
 	margin-right: 6px;
 }
-.single_footer ul li a:hover { color: #525fe1 ; }
+.single_footer ul li a:hover { color: #f99828 ; }
 .single_footer  a{
 text-decoration: none;
 }

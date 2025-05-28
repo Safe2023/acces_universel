@@ -638,6 +638,14 @@
         .chevron.rotate {
             transform: rotate(180deg);
         }
+
+        .nav-link.active,
+        .bottom-nav a.active,
+        .dropdown-menu a.active {
+            color: #f99828 !important;
+            font-weight: bold;
+            border-bottom: 2px solid #f99828;
+        }
     </style>
     </head>
     <!-- START LOGO WITH CONTACT -->
@@ -683,14 +691,7 @@
                         <a class="nav-link" href="/">Accueil</a>
                         <a class="nav-link" href="/apropos">À propos</a>
                         <a class="nav-link" href="/formation">Formation</a>
-                        <div class="nav-item dropdown position-relative">
-                            <a class="nav-link dropdown-toggle" href="#" id="blogDropdown">Blog</a>
-                            <div class="dropdown-menu" aria-labelledby="blogDropdown">
-                                <a class="dropdown-item" href="/actualite">Actualités</a>
-                                <a class="dropdown-item" href="#">Articles</a>
-                                <a class="dropdown-item" href="#">Interviews</a>
-                            </div>
-                        </div>
+                        <a class="nav-link" href="/actualite">Actualités</a>
                         <a class="nav-link" href="/contact">Contact</a>
                     </nav>
                 </div>
@@ -711,7 +712,6 @@
         </a>
     </header>
 
-
     <!-- MENU MOBILE EN BAS -->
     <nav class="bottom-nav d-flex d-md-none">
         <a href="/" class="active">
@@ -726,23 +726,18 @@
             <i class="fa-solid fa-chalkboard-user"></i>
             <span>Formation</span>
         </a>
-        <a href="/blog" id="mobileBlogToggle">
+        <a href="/actualite">
+
             <i class="fas fa-blog"></i>
-            <span>Blog</span>
-            <i class="fas fa-chevron-up chevron d-block"></i>
+            <span>Actualités</span>
         </a>
-        <a href="contact">
+        <a href="/contact">
             <i class="fas fa-envelope"></i>
             <span>Contact</span>
         </a>
     </nav>
 
-    <!-- DROPDOWN MOBILE POUR BLOG -->
-    <div class="dropdown-menu-mobile text-center d-md-none" id="mobileBlogMenu">
-        <a href="#">Articles</a>
-        <a href="#">Actualités</a>
-        <a href="#">Interviews</a>
-    </div>
+
 
     <!-- Bootstrap JS + Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -801,8 +796,8 @@
                     <div class="single_footer single_footer_top">
                         <h4>Liens rapides</h4>
                         <ul>
-                            <li><a href="#">Accueil</a></li>
-                            <li><a href="#">Formation</a></li>
+                            <li><a href="/">Accueil</a></li>
+                            <li><a href="/formation">Formation</a></li>
                             <li><a href="/contact">Contactez-nous</a></li>
 
                         </ul>
@@ -824,7 +819,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="footer_copyright">
-                        <p>&copy; 2025 Acces universel.Tous droits réservésd.</p>
+                        <p>&copy; 2025 Acces universel.Tout droits réservésd.</p>
                     </div>
                 </div>
             </div>
@@ -833,25 +828,22 @@
     <!-- END FOOTER -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('.nav-link');
+            const currentPath = window.location.pathname;
 
-            function setActiveLink() {
-                const currentUrl = window.location.href;
-                navLinks.forEach(function(link) {
-                    if (link.href === currentUrl) {
-                        link.parentElement.classList.add('active');
-                    } else {
-                        link.parentElement.classList.remove('active');
-                    }
-                });
-            }
+            // Sélectionner tous les liens de navigation (desktop + mobile)
+            document.querySelectorAll('.nav-link, .bottom-nav a, .dropdown-menu a').forEach(link => {
+                const linkPath = link.getAttribute('href');
 
-            setActiveLink();
-
-            window.addEventListener('popstate', setActiveLink);
+                // Si le chemin EXACT correspond, on ajoute la classe active
+                if (currentPath === linkPath) {
+                    link.classList.add('active');
+                }
+            });
         });
     </script>
-   <!--  /////moyen de payement kkiapaye////// -->
+
+
+    <!--  /////moyen de payement kkiapaye////// -->
 
 
 
@@ -882,7 +874,7 @@
     <script src="assets/js/scripts.js"></script>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"92aff395cb19d12c","version":"2025.3.0","r":1,"serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"af32052a4af94682924748133ff6d4eb","b":1}' crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  
+
 </body>
 
 </html>

@@ -59,7 +59,7 @@ class ActualiteController extends Controller
    public function actualite()
     {
         $actualites = Actualite::latest()->get(); 
-        return view('actualite', compact('actualites'));
+        return view('partial.actualite', compact('actualites'));
     }
     
     /**

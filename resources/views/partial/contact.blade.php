@@ -83,7 +83,7 @@
             </div>
           </div>
           <h5 class="fw-bold">Téléphone</h5>
-          <p class="text-muted">+229 91 71 86 86 <br>+229 97 13 83 02</p>
+          <p class="text-muted">+229 0191 718 686 <br>+229 0197 138 302</p>
         </div>
       </div>
 

@@ -45,15 +45,15 @@ class ServiceController extends Controller
     }
     public function contact()
     {
-        return view("contact");
+        return view("partial.contact");
     }
     public function formation()
     {
-        return view("formation");
+        return view("partial.formation");
     } 
     public function apropos()
     {
-        return view("apropos");
+        return view("partial.apropos");
     }
     public function index()
     {

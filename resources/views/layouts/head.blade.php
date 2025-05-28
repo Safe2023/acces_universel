@@ -14,6 +14,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- App favicon -->
     <link rel="shortcut icon" href="/assets/images/au_logo.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- Bootstrap Css -->
     <link href="{{asset('/assetss/css/bootstrap.min.css')}}" id="bootstrap-style" rel="stylesheet" type="text/css" />
@@ -75,22 +76,17 @@
 
                 <div class="d-flex">
                     <div class="dropdown d-inline-block">
-                        <div class="dropdown-menu dropdown-menu-end">
-        <!-- item-->
-        <a class="dropdown-item" href=""><i class="bx bx-user font-size-16 align-middle me-1"></i> <span key="t-profile">Profile</span></a>
-        <div class="dropdown-divider"></div>
-        
-        <a class="dropdown-item text-danger" href="{{route('logout')}}" 
-         onclick="event.preventDefault(); 
-                document.getElementById('logoutForm').submit()">
-        <i class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> 
-            <span type="submit" key="t-logout">Se déconnecter</span>
-        </a>
-        <form id="logoutForm" action="{{route('logout')}}" method="post">
-            @csrf
-        </form>
-        
-    </div>
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @php
+                            $initials = strtoupper(substr(Auth::user()->name, 0, 2));
+                            @endphp
+
+                            <img class="rounded-circle header-profile-user"
+                                src="https://ui-avatars.com/api/?name={{ $initials }}&background=random&color=fff"
+                                alt="Header Avatar">
+
+                        </button>
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
                             <a class="dropdown-item" href=""><i class="bx bx-user font-size-16 align-middle me-1"></i> <span key="t-profile">Profile</span></a>
@@ -131,7 +127,6 @@
 
                         <li>
                             <a href="{{route('home')}}" class="waves-effect">
-                                {{-- <i class="bx bx-home-circle"></i><span class="badge rounded-pill bg-info float-end">04</span> --}}
                                 <span key="t-dashboards">Tableau de bord</span>
                             </a>
                         </li>
@@ -147,8 +142,8 @@
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="/table" key="t-products">CRUD Actualités</a></li>
-                                <li><a href="" key="t-product-detail">Catégorie</a></li>
-                                <li><a href="#" key="t-product-detail">Commentaire</a></li>
+                                <!-- <li><a href="" key="t-product-detail">Catégorie</a></li>
+                                <li><a href="#" key="t-product-detail">Commentaire</a></li> -->
                             </ul>
                         </li>
 
@@ -168,11 +163,11 @@
                                 <i class="bx bxs-user-detail"></i>
                                 <span key="t-contacts">Suscription</span>
                             </a>
-                            <ul class="sub-menu" aria-expanded="false">
+                           <!--  <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="" key="t-user-grid">Listes</a></li>
                                 <li><a href="#" key="t-user-list">Mail</a></li>
 
-                            </ul>
+                            </ul> -->
                         </li>
 
                         <li>
@@ -323,8 +318,4 @@
         });
     </script>
 </body>
-
-
-<!-- Mirrored from themesbrand.com/skote/layouts/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 14:23:19 GMT -->
-
 </html>
