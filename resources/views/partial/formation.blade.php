@@ -2,40 +2,78 @@
 @section('content')
 
 <style>
- 
-  .breadcrumb-area {
-    background-image: url(assets/img/bg/section-bg.jpg);
-    background-size: cover;
-    background-position: center center;
-    height: 200px; /* ou auto, ou min-height */
-}
-
-@media (max-width: 768px) {
     .breadcrumb-area {
-        height: 150px; /* hauteur réduite en mobile */
+      /*   width: 100% !important;
+        height: 200px;
+        background-size: cover;
+       
+      
+    
+        padding: 297px 0 202px;
+        min-height: 300px;
+        background-size: contain;
+      
+        background-repeat: no-repeat;
+        background-color: #222; */
+        /* ou auto, ou min-height */
     }
-}
 
+    @media (max-width: 768px) {
+        .breadcrumb-area {
+            height: 150px;
+            /* hauteur réduite en mobile */
+        }
+    }
+
+    /* Pagination personnalisée avec ta couleur */
+    .pagination .page-item .page-link {
+        color: #f99828;
+        border: 1px solid #f99828;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .pagination .page-item.active .page-link {
+        background-color: #f99828;
+        color: white;
+        border-color: #f99828;
+        font-weight: 600;
+    }
+
+    .pagination .page-item .page-link:hover {
+        background-color: #f99828;
+        color: white;
+        border-color: #f99828;
+    }
+
+    .pagination .page-item.disabled .page-link {
+        color: #f99828;
+        opacity: 0.5;
+        pointer-events: none;
+        border-color: #f99828;
+    }
 </style>
-<section class="section-top breadcrumb-area" style="background-image: url(assets/img/au/formation.jpg);  background-size:cover; background-position: center center;">
+<section class="section-top breadcrumb-area ">
     <div class="container">
-    <div class="col-lg-12 col-sm-12 col-xs-12 text-center">
-                <div class="inner-content clearfix">
-                    <div class="title wow slideInDown animated" data-wow-delay="0.3s" data-wow-duration="1500ms">
-                        <h1>Formation & Education</h1>
-                    </div>
-                    <div class="border-box"></div>
-                    <div class="breadcrumb-menu wow slideInUp animated" data-wow-delay="0.3s" data-wow-duration="1500ms">
-                        <ul class="clearfix">
-                            <li><a href="{{url('/')}}">Accueil</a></li>
-                            <li><i class="fa fa-angle-double-right" aria-hidden="true"></i></li>
-                            <li class="active">Formation</li>
-                        </ul>
-                    </div>
+        <div class="col-lg-12 col-sm-12 col-xs-12 text-center">
+            <div class="inner-content clearfix">
+                <div class="title wow slideInDown animated" data-wow-delay="0.3s" data-wow-duration="1500ms">
+                    <h1>Formation & Education</h1>
+                </div>
+                <div class="border-box"></div>
+                <div class="breadcrumb-menu wow slideInUp animated" data-wow-delay="0.3s" data-wow-duration="1500ms">
+                    <ul class="clearfix">
+                        <li><a href="{{url('/')}}">Accueil</a></li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i></li>
+                        <li class="active">Formation</li>
+                    </ul>
                 </div>
             </div>
+        </div>
     </div>
 </section>
+
+
+
 
 <main class="container mt-5">
     <div class="row">
@@ -189,13 +227,13 @@
                             <div class="modal-footer bg-white rounded-bottom-4">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
 
-                                <a  href="javascript:void(0);" 
+                                <a href="javascript:void(0);"
                                     onclick="payerFormation('{{ $formation->id }}', '{{ $formation->frais_dinscription }}', '{{ $formation->nom }}')"
                                     class="btn subs btn-sm">
                                     Réserver cette formation
                                 </a>
 
-                              
+
                             </div>
 
                         </div>
@@ -206,11 +244,37 @@
                 @endforeach
             </div>
 
-            <div class="row mt-4">
-                <div class="col-12 d-flex justify-content-center">
-                    {{ $formations->appends(request()->input())->links() }}
-                </div>
-            </div>
+            @if ($formations->lastPage() > 1)
+            <nav aria-label="Page navigation">
+                <ul class="pagination col-12 d-flex justify-content-center">
+
+                    <li class="page-item {{ $formations->onFirstPage() ? 'disabled' : '' }}">
+                        <a class="page-link"
+                            href="{{ $formations->appends(request()->input())->previousPageUrl() ?? '#' }}"
+                            tabindex="-1">Previous</a>
+                    </li>
+
+
+                    @for ($i = 1; $i <= $formations->lastPage(); $i++)
+                        <li class="page-item {{ $formations->currentPage() == $i ? 'active' : '' }}">
+                            <a class="page-link" href="{{ $formations->url($i) }}?{{ http_build_query(request()->except('page')) }}">
+                                {{ $i }}
+                            </a>
+                        </li>
+                        @endfor
+
+
+                        <li class="page-item {{ !$formations->hasMorePages() ? 'disabled' : '' }}">
+                            <a class="page-link"
+                                href="{{ $formations->appends(request()->input())->nextPageUrl() ?? '#' }}">
+                                Next
+                            </a>
+                        </li>
+
+                </ul>
+            </nav>
+            @endif
+
             @endif
         </div>
 

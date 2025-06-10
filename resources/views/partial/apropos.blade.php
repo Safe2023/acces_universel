@@ -9,14 +9,7 @@
     text-transform: uppercase;
   }
 
-  .breadcrumb-area {
-    background-image: url(assets/img/bg/section-bg.jpg);
-    background-size: cover;
-    background-position: center center;
-    height: 200px;
-    /* ou auto, ou min-height */
-  }
-
+  
   @media (max-width: 768px) {
     .breadcrumb-area {
       height: 150px;
@@ -70,11 +63,12 @@
       color: #666;
       margin-bottom: 30px;
     }
+    
 </style>
-<section class="section-top breadcrumb-area" style="background-image: url(assets/img/au/union_welcom.jpg);  background-size:cover; background-position: center center;">
+<section class="section-top breadcrumb-area" style="background-image: url(assets/img/au/union_welcom.jpg);  background-size:cover; background-position: center center;"  >
   <div class="container">
     <div class="col-lg-12 col-sm-12 col-xs-12 text-center">
-      <div class="inner-content clearfix">
+      <div class="inner-content clearfix">                   
         <div class="title wow slideInDown animated" data-wow-delay="0.3s" data-wow-duration="1500ms">
           <h1>A propos de nous</h1>
         </div>
@@ -90,6 +84,7 @@
     </div>
   </div>
 </section>
+
 <section class="video-section">
   <div class="container">
     <div class="row justify-content-center text-center">

@@ -1,26 +1,18 @@
 @extends('layouts.header')
 @section('content')
 <style>
+
   .modal1 {
     background: #F7921D !important;
     color: #fff !important;
+       text-transform: uppercase
   }
 
   .modal1:hover {
     background: #fff !important;
     color: #F7921D !important;
     border: 1px solid #fc9400;
-  }
-
-  .modal1 {
-    background: #F7921D !important;
-    color: #fff !important;
-  }
-
-  .modal1:hover {
-    background: #fff !important;
-    color: #F7921D !important;
-    border: 1px solid #fc9400;
+  
   }
 
   .logo {

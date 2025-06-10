@@ -18,21 +18,21 @@ class Ajout_formationController extends Controller
     }
 
     public function reserver($id, Request $request)
-{
-    $formation = Ajout_formation::findOrFail($id);
+    {
+        $formation = Ajout_formation::findOrFail($id);
 
-    // Ici, tu peux sauvegarder la réservation si besoin
-    // Exemple :
-    Inscription_formation::create([
-        'formation_id' => $formation->id,
-        'nom' => 'Nom à récupérer via auth ou formulaire',
-        'email' => 'Email à récupérer',
-        'telephone' => 'Téléphone à récupérer',
-        'transaction_id' => $request->transaction_id,
-    ]);
+        // Ici, tu peux sauvegarder la réservation si besoin
+        // Exemple :
+        Inscription_formation::create([
+            'formation_id' => $formation->id,
+            'nom' => 'Nom à récupérer via auth ou formulaire',
+            'email' => 'Email à récupérer',
+            'telephone' => 'Téléphone à récupérer',
+            'transaction_id' => $request->transaction_id,
+        ]);
 
-    return redirect()->back()->with('success', 'Paiement effectué et réservation enregistrée !');
-}
+        return redirect()->back()->with('success', 'Paiement effectué et réservation enregistrée !');
+    }
 
     public function search(Request $request)
     {
@@ -46,9 +46,9 @@ class Ajout_formationController extends Controller
 
         // Paginer les résultats (6 par page par exemple)
         $formations = $query->paginate(6);
- $actualites = Actualite::latest()->take(3)->get();
+        $actualites = Actualite::latest()->take(3)->get();
         // Assure-toi d'envoyer la bonne variable à la vue
-        return view('partial.formation', compact('formations','actualites'));
+        return view('partial.formation', compact('formations', 'actualites'));
     }
 
     public function create()
@@ -119,7 +119,8 @@ class Ajout_formationController extends Controller
     }
 
     public function formation_details($id)
-    {  $actualites = Actualite::latest()->take(3)->get(); // pour la sidebar
+    {
+        $actualites = Actualite::latest()->take(3)->get(); // pour la sidebar
         $formation = Ajout_formation::findOrFail($id);
         return view('formation_details', compact('formation', 'actualites'));
     }
@@ -140,63 +141,63 @@ class Ajout_formationController extends Controller
     /**
      * Update the specified resource in storage.
      */
-   public function updates(Request $request, $id)
-{
-    $request->validate([
-        "nom" => "required",
-        "frais_dinscription" => "required",
-        "debut_formation" => "required",
-        "fin_formation" => "required",
-        "cout_formation" => "required",
-        "delais_dinscription" => "required",
-        "description" => "required",
-        'image' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
-        'document' => 'nullable|mimes:pdf,doc,docx,txt|max:5120',
-        'marquette' => 'nullable|mimes:pdf,doc,docx,txt|max:5120',
-    ]);
+    public function updates(Request $request, $id)
+    {
+        $request->validate([
+            "nom" => "required",
+            "frais_dinscription" => "required",
+            "debut_formation" => "required",
+            "fin_formation" => "required",
+            "cout_formation" => "required",
+            "delais_dinscription" => "required",
+            "description" => "required",
+            'image' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
+            'document' => 'nullable|mimes:pdf,doc,docx,txt|max:5120',
+            'marquette' => 'nullable|mimes:pdf,doc,docx,txt|max:5120',
+        ]);
 
-    // On récupère l'objet formation depuis la base
-    $formation = Ajout_formation::findOrFail($id);
+        // On récupère l'objet formation depuis la base
+        $formation = Ajout_formation::findOrFail($id);
 
-    $data = $request->only([
-        'nom',
-        'frais_dinscription',
-        'debut_formation',
-        'fin_formation',
-        'cout_formation',
-        'delais_dinscription',
-        'description'
-    ]);
+        $data = $request->only([
+            'nom',
+            'frais_dinscription',
+            'debut_formation',
+            'fin_formation',
+            'cout_formation',
+            'delais_dinscription',
+            'description'
+        ]);
 
-    $formation->update($data);
+        $formation->update($data);
 
-   
-    if ($request->hasFile('image')) {
-        $image = $request->file('image');
-        $imageName = time() . '.' . $image->extension();
-        $image->move(public_path('uploads/images'), $imageName);
-        $formation->image = 'uploads/images/' . $imageName;
+
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $imageName = time() . '.' . $image->extension();
+            $image->move(public_path('uploads/images'), $imageName);
+            $formation->image = 'uploads/images/' . $imageName;
+        }
+
+        if ($request->hasFile('document')) {
+            $document = $request->file('document');
+            $documentName = time() . '_doc.' . $document->extension();
+            $document->move(public_path('uploads/documents'), $documentName);
+            $formation->document = 'uploads/documents/' . $documentName;
+        }
+
+        if ($request->hasFile('marquette')) {
+            $marquette = $request->file('marquette');
+            $marquetteName = time() . '_marq.' . $marquette->extension();
+            $marquette->move(public_path('uploads/marquettes'), $marquetteName);
+            $formation->marquette = 'uploads/marquettes/' . $marquetteName;
+        }
+
+
+        $formation->save();
+
+        return redirect()->back()->with('success', 'Formation mise à jour avec succès');
     }
-
-    if ($request->hasFile('document')) {
-        $document = $request->file('document');
-        $documentName = time() . '_doc.' . $document->extension();
-        $document->move(public_path('uploads/documents'), $documentName);
-        $formation->document = 'uploads/documents/' . $documentName;
-    }
-
-    if ($request->hasFile('marquette')) {
-        $marquette = $request->file('marquette');
-        $marquetteName = time() . '_marq.' . $marquette->extension();
-        $marquette->move(public_path('uploads/marquettes'), $marquetteName);
-        $formation->marquette = 'uploads/marquettes/' . $marquetteName;
-    }
-
-  
-    $formation->save();
-
-    return redirect()->back()->with('success', 'Formation mise à jour avec succès');
-}
 
 
     /**
@@ -208,7 +209,7 @@ class Ajout_formationController extends Controller
         $formation->delete();
         return redirect()->back()->with('success', 'Formation supprimer');
     }
-      public function tableau()
+    public function tableau()
     {
         $tableau = Ajout_formation::all();
         return view('tableau', ['tableau' => $tableau]);

@@ -54,7 +54,7 @@
                         <textarea name="description_complete" class="form-control" rows="4" placeholder="Description complète...">{{ old('description_complete') }}</textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-primary w-100">Ajouter produit</button>
+                    <button type="submit" class="btn btn-primary w-100">Ajouter une actualité</button>
                 </form>
 
             </div>

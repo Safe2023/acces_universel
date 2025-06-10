@@ -77,7 +77,7 @@
 		<!-- Third Slide -->
 		<div class="carousel-item">
 			<!-- Slide Background -->
-			<img src="assets/img/au/integrite.jpg" alt="slider image" />
+			<img src="assets/img/au/impartialite.jpg" alt="slider image" />
 			<!-- Slide Text Layer -->
 			<div class="fw_al_007_slide">
 				<h3 data-animation="animated flipInX">Allons-y maintenant</h3>
@@ -104,7 +104,7 @@
 <!-- START ABOUT FEATURE CONTENT -->
 <section class="feature section-padding mt-5">
 	<div class="container">
-		<div class="section-title text-center">
+		<div class="section-title text-center mb-5">
 			<h2>L'EXPERTISE SUR MESURE</h2>
 			<p>Que vous soyez une entreprise en pleine croissance, un entrepreneur ambitieux ou une marque à la recherche d’impact, notre mission est claire : vous propulser dans l’ère numérique avec des solutions innovantes, esthétiques et performantes.</p>
 		</div>
@@ -326,11 +326,11 @@
 				<div class="single-team-home">
 					<div class="img"><img src="assets/img/au/personel2.jpg" class="img-fluid" alt=""></div>
 					<div class="team-content-home">
-						<h3>Ayoub Fennouni</h3>
-						<p>Logo Expert</p>
+						<h3>BOGNON Mahougon Léobard</h3>
+						<p>Directeur des Fonctions Transversales</p>
 						<ul class="social-home">
 							<li><a href="#" class="facebook-home"><i class="fa-brands fa-facebook-f"></i></a></li>
-							<li><a href="#" class="twitter-home"><i class="fa-brands fa-linkedin-in"></i></a></li>
+							<li><a href="linkedin.com/in/léobard-mahougnon-bognon-5b30477a" class="twitter-home"><i class="fa-brands fa-linkedin-in"></i></a></li>
 
 						</ul>
 					</div>
@@ -340,11 +340,11 @@
 				<div class="single-team-home">
 					<div class="img"><img src="assets/img/au/personel4.jpg" class="img-fluid" alt=""></div>
 					<div class="team-content-home">
-						<h3>Mark Linomi</h3>
-						<p>Marketer</p>
+						<h3>KOUGBLENOU do capio Vianio</h3>
+						<p>Directeur des Stratégies Partenariat et Opérations</p>
 						<ul class="social-home">
 							<li><a href="#" class="facebook-home"><i class="fa-brands fa-facebook-f"></i></a></li>
-							<li><a href="#" class="twitter-home"><i class="fa-brands fa-linkedin-in"></i></a></li>
+							<li><a href="linkedin.com/in/vianiokougblénou" class="twitter-home"><i class="fa-brands fa-linkedin-in"></i></a></li>
 
 						</ul>
 					</div>
@@ -399,7 +399,7 @@
 <!-- END PROCESS -->
 
 <!-- START BLOG -->
-<section id="blog" class="blog_area section-padding">
+<section id="blog" class="blog_area section-padding mt-5">
 	<div class="container">
 		<div class="section-title text-center ">
 			<h2 class="defe">Dernières nouvelles</h2>
@@ -408,22 +408,22 @@
 		<div class="row">
     @foreach ($actualites as $actualite)
         <div class="col-md-4 col-sm-6 mb-4">
-            <div class="card team-card shadow-sm">
-                <img src="{{ asset($actualite->image) }}" class="card-img-top" alt="Image de l'actualité">
-                <div class="card-body">
-                    <span>
-                        {{ \Carbon\Carbon::parse($actualite->date)->format('M d, Y') }} |
-                        <a href="#" class="btn">{{ $actualite->titre }}</a>
-                    </span>
-                    <p class="card-text small">{{ Str::limit($actualite->description, 100) }}</p>
-                    <div class="d-flex justify-content-end">
-                        <!-- Bouton pour ouvrir la modale -->
-                        <button class="btn subs btn-sm" data-bs-toggle="modal" data-bs-target="#modal-{{ $actualite->id }}">
-                            Detail <span><i class="bi bi-arrow-90deg-up"></i></span>
-                        </button>
-                    </div>
-                </div>
-            </div>
+           <div class="card team-card shadow-sm">
+    <img src="{{ asset($actualite->image) }}" class="card-img-top" alt="Image de l'actualité">
+    <div class="card-body">
+        <span>
+            {{ \Carbon\Carbon::parse($actualite->date)->format('M d, Y') }} |
+            <a href="#" class="btn">{{ $actualite->titre }}</a>
+        </span>
+        <p class="card-text small">{{ Str::limit($actualite->description, 100) }}</p>
+        <div class="d-flex justify-content-end">
+            <button class="btn subs btn-sm" data-bs-toggle="modal" data-bs-target="#modal-{{ $actualite->id }}">
+                Detail <span><i class="bi bi-arrow-90deg-up"></i></span>
+            </button>
+        </div>
+    </div>
+</div>
+
         </div>
 
         <!-- Modal -->
@@ -460,7 +460,7 @@
 
 		<div class="d-flex mt-5" style="justify-content:center;">
 
-			<a href="#" class="btn subs btn-sm">Decouvrir plus de formations</a>
+			<a href="/actualite" class="btn subs btn-sm">Decouvrir plus de formations</a>
 		</div>
 	</div>
 </section>
@@ -583,19 +583,50 @@
 					<h3>Nos partenaire</h3>
 				</div>
 				<div class="partner">
-					<a href="#"><img src="assets/img/brands/1.svg" alt="image"></a>
-					<a href="#"><img src="assets/img/brands/2.svg" alt="image"></a>
-					<a href="#"><img src="assets/img/brands/3.svg" alt="image"></a>
-					<a href="#"><img src="assets/img/brands/4.svg" alt="image"></a>
-					<a href="#"><img src="assets/img/brands/5.svg" alt="image"></a>
-					<a href="#"><img src="assets/img/brands/1.svg" alt="image"></a>
-					<a href="#"><img src="assets/img/brands/2.svg" alt="image"></a>
-					<a href="#"><img src="assets/img/brands/3.svg" alt="image"></a>
+					<a href="#"><img src="assets/img/au/partenair1.jpeg" alt="image"></a>
+					<a href="#"><img src="assets/img/au/partenair2.jpeg" alt="image"></a>
+					<a href="#"><img src="assets/img/au/partenair3.jpeg" alt="image"></a>
+					<a href="#"><img src="assets/img/au/partenair4.jpeg" alt="image"></a>
+					<a href="#"><img src="assets/img/au/partenair5.jpeg" alt="image"></a>
+					<a href="#"><img src="assets/img/au/partenair6.jpeg" alt="image"></a>
+					<a href="#"><img src="assets/img/au/partenair7.jpeg" alt="image"></a>
 				</div>
 			</div><!-- END COL  -->
 		</div><!--END  ROW  -->
 	</div><!-- END CONTAINER  -->
 </div>
-<!-- END COMPANY PARTNER LOGO -->
+<style>
+	.partner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.partner a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 100px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.partner a:hover {
+    transform: scale(1.05);
+}
+
+.partner img {
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+}
+
+</style>
 
 @endsection

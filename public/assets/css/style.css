@@ -3269,14 +3269,14 @@ margin-bottom:40px;
     outline: 0 none;
 }
 .contact textarea:focus {
-border: 2px solid #525fe1;
+border: 2px solid #f99828;
     -webkit-box-shadow: none;
             box-shadow: none;
     outline: 0 none;
 }
 .contact_btn {
-	background: #525fe1;
-	border: 2px solid #525fe1;
+	background: #f99828;
+	border: 2px solid #f99828;
 	color: #fff;
 	padding: 12px 30px;
 	-webkit-transition: 0.3s;

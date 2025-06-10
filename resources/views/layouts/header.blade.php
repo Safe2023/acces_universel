@@ -91,12 +91,17 @@
     </style>
     <style>
         .breadcrumb-area {
+           
             position: relative;
-            background-attachment: scroll;
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-size: cover;
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+            min-height: 300px;
             padding: 297px 0 202px;
+            background-image: url('assets/img/au/formation.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            background-color: #222;
             z-index: 10;
         }
 
@@ -106,10 +111,11 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background: rgba(0, 0, 0, 0.50) none repeat scroll 0 0;
+            background: rgba(0, 0, 0, 0.50);
             content: "";
             z-index: -1;
         }
+
 
         .breadcrumb-area .inner-content {
             position: relative;
@@ -314,6 +320,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             padding: 297px 0 202px;
+            min-height: 300px;
             z-index: 10;
         }
 
@@ -485,6 +492,7 @@
             color: #f99828;
             border: #f99828 1px solid;
             background-color: #ffffff;
+             text-transform: uppercase
         }
 
         .for:hover {
@@ -497,8 +505,7 @@
             color: #ffffff;
             border: #f99828 1px solid;
             background-color: #f99828;
-
-
+               text-transform: uppercase;
         }
 
         .subs:hover {
@@ -646,6 +653,14 @@
             font-weight: bold;
             border-bottom: 2px solid #f99828;
         }
+
+        .card-img-top {
+            width: 100%;
+            height: 250px;
+            /* hauteur fixe pour uniformiser les cartes */
+            object-fit: cover;
+            /* évite la déformation en rognant */
+        }
     </style>
     </head>
     <!-- START LOGO WITH CONTACT -->
@@ -695,11 +710,11 @@
                         <a class="nav-link" href="/contact">Contact</a>
                     </nav>
                 </div>
-                <div class="col-md-2 text-end">
+                <!--  <div class="col-md-2 text-end">
                     <a href="{{route('login')}}" class="btn for  btn-sm">
                         <i class="fas fa-user"></i>
                     </a>
-                </div>
+                </div> -->
             </div>
         </div>
     </header>
@@ -707,9 +722,9 @@
     <!-- NAVBAR MOBILE HAUT -->
     <header class="d-flex d-md-none justify-content-between align-items-center p-2 shadow-sm bg-white">
         <a href="#"><img src="assets/img/au/logo_04.webp" alt="Logo" /></a>
-        <a href="{{route('login')}}" class="btn for  btn-sm">
+        <!--  <a href="{{route('login')}}" class="btn for  btn-sm">
             <i class="fas fa-user"></i>
-        </a>
+        </a> -->
     </header>
 
     <!-- MENU MOBILE EN BAS -->
@@ -816,13 +831,13 @@
                     </div>
                 </div><!--- END COL -->
             </div><!--- END ROW -->
-            <div class="row">
+            <!--  <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="footer_copyright">
                         <p>&copy; 2025 Acces universel.Tout droits réservésd.</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div><!--- END CONTAINER -->
     </div>
     <!-- END FOOTER -->
