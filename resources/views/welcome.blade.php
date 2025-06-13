@@ -1,42 +1,43 @@
 @extends('layouts.header')
 @section('content')
 <style>
-	 .logo {
-      font-weight: 700;
-      font-size: 28px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      cursor: default;
-      user-select: none;
-    }
+	.logo {
+		font-weight: 700;
+		font-size: 28px;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		cursor: default;
+		user-select: none;
+	}
 
-    /* Animation sur l'icône œil */
-    .logo i {
-      animation: eyePulse 2.5s infinite;
-      color: #fff;
-      font-size: 28px;
-      transition: transform 0.3s ease;
-    }
+	/* Animation sur l'icône œil */
+	.logo i {
+		animation: eyePulse 2.5s infinite;
+		color: #fff;
+		font-size: 28px;
+		transition: transform 0.3s ease;
+	}
 
-    /* Petit effet au survol sur l'icône */
-    .logo:hover i {
-      transform: scale(1.2) rotate(15deg);
-      color: #f99828;
-    }
+	/* Petit effet au survol sur l'icône */
+	.logo:hover i {
+		transform: scale(1.2) rotate(15deg);
+		color: #f99828;
+	}
 
-    @keyframes eyePulse {
-      0%, 100% {
-        transform: scale(1);
-        opacity: 1;
-      }
-      50% {
-        transform: scale(1.1);
-        opacity: 0.85;
-      }
-    }
+	@keyframes eyePulse {
 
-	
+		0%,
+		100% {
+			transform: scale(1);
+			opacity: 1;
+		}
+
+		50% {
+			transform: scale(1.1);
+			opacity: 0.85;
+		}
+	}
 </style>
 <!-- START HOME -->
 <div id="fw_al_007" class="carousel ps_rotate_scale_c ps_indicators_l ps_control_rotate_f swipe_x ps_easeOutQuint" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
@@ -67,7 +68,7 @@
 			<img src="assets/img/au/union_welcom.jpg" alt="slider image" />
 			<!-- Slide Text Layer -->
 			<div class="fw_al_007_slide">
-				<h3 data-animation="animated flipInX">Venez avec nous</h3>
+				<h3 data-animation="animated flipInX">Venez vers nous</h3>
 				<h1 data-animation="animated flipInX">Choisissez l'agence parfaite</h1>
 				<p data-animation="animated flipInX">Nous sommes impatients de vous accueillir dans notre agence.</p>
 				<a href="#service" data-animation="animated flipInX">En savoir plus</a>
@@ -112,7 +113,7 @@
 			<div class="col-lg-3 col-sm-6 col-xs-12 no-padding">
 				<div class="about_single  fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
 					<div class="mb-4 icones logo">
-						 <i class="fas fa-eye"></i>
+						<i class="fas fa-eye"></i>
 					</div>
 					<h4>Vision</h4>
 					<p>
@@ -123,7 +124,7 @@
 			<div class="col-lg-3 col-sm-6 col-xs-12 no-padding">
 				<div class="about_single  fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
 					<div class="mb-4 icones logo">
-						 <i class="fas fa-bullseye"></i>
+						<i class="fas fa-bullseye"></i>
 					</div>
 					<h4>Mission</h4>
 					<p> Façonner un avenir durable grâce aux projets et aux partenariats pour un impact positif.</p>
@@ -132,7 +133,7 @@
 			<div class="col-lg-3 col-sm-6 col-xs-12 no-padding">
 				<div class="about_single  fadeInRight" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
 					<div class="mb-4 icones logo">
-						<i class="fas fa-lightbulb"></i> 
+						<i class="fas fa-lightbulb"></i>
 					</div>
 					<h4>Démrache</h4>
 					<p>
@@ -145,7 +146,7 @@
 			<div class="col-lg-3 col-sm-6 col-xs-12 no-padding">
 				<div class="about_single  fadeInRight" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
 					<div class="mb-4 icones logo">
-						 <i class="fas fa-headset fa-lg"></i>
+						<i class="fas fa-headset fa-lg"></i>
 					</div>
 					<h4>Assistance 24h/24 et 7j/7</h4>
 					<p>Besoin d’aide ? Notre support est disponible 24/7. On vous répond rapide et efficace, à tout moment.</p>
@@ -160,8 +161,8 @@
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<div class="section-title">
-					<h2>Notre étude de cas</h2>
-					<p>C'est un fait établi depuis longtemps qu'un lecteur sera distrait par le contenu lisible d'une page lorsqu'il examinera sa mise en page.</p>
+					<h2>Nos statistiques</h2>
+					<p>Découvrez en un coup d'œil les statistiques clés de votre activité .</p>
 				</div>
 			</div>
 		</div>
@@ -225,26 +226,27 @@
 				<div class="carousel-item active">
 					<div class="row">
 						<div class="col-md-4">
-							<div class="single_service ss_one text-center">
+							<div class="single_service ss_five text-center">
+								<img src="assets/img/service-icon/media.png" alt="" />
+								<h3>Suivi et évaluation des projets</h3>
+								<p>Nous mettons en place des dispositifs adaptés pour suivre l’avancement des projets, mesurer leur impact, et orienter les décisions. Nos approches sont participatives et basées sur des indicateurs de performance fiables.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="single_service ss_five text-center">
 								<img src="assets/img/service-icon/audit.png" alt="" />
-								<h3>Conseil en Développement</h3>
-								<p>Nous favorisons l'Innovation à travers des programmes d'incubation et d'accélération.</p>
+								<h3>Conseil en développement et gouvernances</h3>
+								<p>Nous accompagnons les acteurs publics et privés dans l’élaboration, la mise en œuvre et l’évaluation de stratégies de développement local, régional ou national, en promouvant la transparence, la participation citoyenne et l’efficacité des institutions.</p>
 							</div>
 						</div>
 						<div class="col-md-4">
-							<div class="single_service ss_two text-center">
-								<img src="assets/img/service-icon/backlink.png" alt="" />
-								<h3>Innovation</h3>
-								<p>Nous investissons dans la formation et l'éducation pour renforcer les compétences et les capacités locales.</p>
+							<div class="single_service ss_five text-center">
+								<img src="assets/img/service-icon/outreach.png" alt="" />
+								<h3>Industries Culturelles et Créatives</h3>
+								<p>Nous soutenons les projets culturels à fort potentiel en accompagnant les artistes, artisans et entrepreneurs créatifs. Notre objectif : faire de la culture un levier de développement économique, social et identitaire</p>
 							</div>
 						</div>
-						<div class="col-md-4">
-							<div class="single_service ss_three text-center">
-								<img src="assets/img/service-icon/seo.png" alt="" />
-								<h3>Formation & Education</h3>
-								<p>Nous concevons et soutenons des projets axés sur la durabilité environnementale et sociale.</p>
-							</div>
-						</div>
+						
 					</div>
 				</div>
 
@@ -253,23 +255,24 @@
 					<div class="row">
 						<div class="col-md-4">
 							<div class="single_service ss_five text-center">
-								<img src="assets/img/service-icon/media.png" alt="" />
-								<h3>Projets durables</h3>
-								<p>Nous œuvrons pour l’optimisation de la coordination, du suivi et de la formation des coopérants volontaires.</p>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="single_service ss_six text-center">
-								<img src="assets/img/service-icon/outreach.png" alt="" />
-								<h3>Intermédiation & Gestion des coopérants</h3>
-								<p>Location de salle<br />Location d’espace<br />Coworking</p>
+								<img src="assets/img/service-icon/seo.png" alt="" />
+								<h3>Conception de solutions informatiques</h3>
+								<p>Nous développons des plateformes et des outils numériques (applications web, bases de données, tableaux de bord) qui facilitent la collecte, le traitement et l’analyse de l’information pour une meilleure prise de décision</p>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="single_service ss_five text-center">
 								<img src="assets/img/service-icon/media.png" alt="" />
-								<h3>Projets durables</h3>
-								<p>Nous œuvrons pour l’optimisation de la coordination, du suivi et de la formation des coopérants volontaires.</p>
+								<h3>Renforcement des capacités</h3>
+								<p>Nos formations sont pensées pour répondre aux besoins réels du terrain. Nous renforçons les compétences techniques, managériales et organisationnelles des bénéficiaires pour une montée en compétence durable.</p>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="single_service ss_five text-center">
+								<img src="assets/img/service-icon/backlink.png" alt="" />
+								<h3>Conseil en données probantes</h3>
+								<p>Nous aidons nos partenaires à produire, interpréter et exploiter les données issues de la recherche, des statistiques ou du terrain. Ces données sont traduites en recommandations opérationnelles pour guider les politiques et les projets.</p>
 							</div>
 						</div>
 					</div>
@@ -329,7 +332,7 @@
 						<h3>BOGNON Mahougon Léobard</h3>
 						<p>Directeur des Fonctions Transversales</p>
 						<ul class="social-home">
-							<li><a href="#" class="facebook-home"><i class="fa-brands fa-facebook-f"></i></a></li>
+							<li><a href="https://www.facebook.com/share/1AByy42uRX/" class="facebook-home"><i class="fa-brands fa-facebook-f"></i></a></li>
 							<li><a href="linkedin.com/in/léobard-mahougnon-bognon-5b30477a" class="twitter-home"><i class="fa-brands fa-linkedin-in"></i></a></li>
 
 						</ul>
@@ -343,7 +346,7 @@
 						<h3>KOUGBLENOU do capio Vianio</h3>
 						<p>Directeur des Stratégies Partenariat et Opérations</p>
 						<ul class="social-home">
-							<li><a href="#" class="facebook-home"><i class="fa-brands fa-facebook-f"></i></a></li>
+							<li><a href="https://www.facebook.com/share/161wjKbwcu/" class="facebook-home"><i class="fa-brands fa-facebook-f"></i></a></li>
 							<li><a href="linkedin.com/in/vianiokougblénou" class="twitter-home"><i class="fa-brands fa-linkedin-in"></i></a></li>
 
 						</ul>
@@ -406,57 +409,57 @@
 			<p>Les actualités de ACCES UNIVERSEL</p>
 		</div>
 		<div class="row">
-    @foreach ($actualites as $actualite)
-        <div class="col-md-4 col-sm-6 mb-4">
-           <div class="card team-card shadow-sm">
-    <img src="{{ asset($actualite->image) }}" class="card-img-top" alt="Image de l'actualité">
-    <div class="card-body">
-        <span>
-            {{ \Carbon\Carbon::parse($actualite->date)->format('M d, Y') }} |
-            <a href="#" class="btn">{{ $actualite->titre }}</a>
-        </span>
-        <p class="card-text small">{{ Str::limit($actualite->description, 100) }}</p>
-        <div class="d-flex justify-content-end">
-            <button class="btn subs btn-sm" data-bs-toggle="modal" data-bs-target="#modal-{{ $actualite->id }}">
-                Detail <span><i class="bi bi-arrow-90deg-up"></i></span>
-            </button>
-        </div>
-    </div>
-</div>
+			@foreach ($actualites as $actualite)
+			<div class="col-md-4 col-sm-6 mb-4">
+				<div class="card team-card shadow-sm">
+					<img src="{{ asset($actualite->image) }}" class="card-img-top" alt="Image de l'actualité">
+					<div class="card-body">
+						<span>
+							{{ \Carbon\Carbon::parse($actualite->date)->format('M d, Y') }} |
+							<a href="#" class="btn">{{ $actualite->titre }}</a>
+						</span>
+						<p class="card-text small">{{ Str::limit($actualite->description, 100) }}</p>
+						<div class="d-flex justify-content-end">
+							<button class="btn subs btn-sm" data-bs-toggle="modal" data-bs-target="#modal-{{ $actualite->id }}">
+								Detail <span><i class="bi bi-arrow-90deg-up"></i></span>
+							</button>
+						</div>
+					</div>
+				</div>
 
-        </div>
+			</div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="modal-{{ $actualite->id }}" tabindex="-1" aria-labelledby="modalLabel-{{ $actualite->id }}" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body p-4">
-                        <div class="row">
-                            <!-- Image à gauche -->
-                            <div class="col-md-5">
-                                <img src="{{ asset($actualite->image) }}" alt="Image" class="img-fluid rounded mb-3">
-                                <div class="small text-muted text-center" style="font-size: 20px;">
-                                    <span class="">{{ \Carbon\Carbon::parse($actualite->date)->format('d/m/Y') }}</span>
-                                    
-                                </div>
-                            </div>
+			<!-- Modal -->
+			<div class="modal fade" id="modal-{{ $actualite->id }}" tabindex="-1" aria-labelledby="modalLabel-{{ $actualite->id }}" aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-body p-4">
+							<div class="row">
+								<!-- Image à gauche -->
+								<div class="col-md-5">
+									<img src="{{ asset($actualite->image) }}" alt="Image" class="img-fluid rounded mb-3">
+									<div class="small text-muted text-center" style="font-size: 20px;">
+										<span class="">{{ \Carbon\Carbon::parse($actualite->date)->format('d/m/Y') }}</span>
 
-                            <!-- Détails à droite -->
-                            <div class="col-md-7">
-                                <h5 class="mb-2 text-center " style="color: #f99828;">{{ $actualite->titre }}</h5>
-                                <p>{{ $actualite->description_complete }}</p>
-                            </div>
-                        </div>
-                    </div>
+									</div>
+								</div>
 
-                    <div class="modal-footer border-top-0">
-                        <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    @endforeach
-</div>
+								<!-- Détails à droite -->
+								<div class="col-md-7">
+									<h5 class="mb-2 text-center " style="color: #f99828;">{{ $actualite->titre }}</h5>
+									<p>{{ $actualite->description_complete }}</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="modal-footer border-top-0">
+							<button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Fermer</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			@endforeach
+		</div>
 
 		<div class="d-flex mt-5" style="justify-content:center;">
 
@@ -580,7 +583,7 @@
 		<div class="row">
 			<div class="col-lg-12 text-center">
 				<div class="partner_title">
-					<h3>Nos partenaire</h3>
+					<h3>Nos partenaires</h3>
 				</div>
 				<div class="partner">
 					<a href="#"><img src="assets/img/au/partenair1.jpeg" alt="image"></a>
@@ -597,36 +600,35 @@
 </div>
 <style>
 	.partner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 2rem 0;
-}
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1.5rem;
+		padding: 2rem 0;
+	}
 
-.partner a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 140px;
-    height: 100px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
+	.partner a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 140px;
+		height: 100px;
+		background-color: #f9f9f9;
+		border-radius: 8px;
+		overflow: hidden;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease;
+	}
 
-.partner a:hover {
-    transform: scale(1.05);
-}
+	.partner a:hover {
+		transform: scale(1.05);
+	}
 
-.partner img {
-    max-width: 100%;
-    max-height: 80px;
-    object-fit: contain;
-}
-
+	.partner img {
+		max-width: 100%;
+		max-height: 80px;
+		object-fit: contain;
+	}
 </style>
 
 @endsection

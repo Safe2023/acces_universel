@@ -2,24 +2,7 @@
 @section('content')
 
 <style>
-	.oigtr {
-		text-align: center;
-		font-size: 20px;
-		color: #f99828;
-		text-transform: uppercase;
-	}
-	.breadcrumb-area {
-    background-image: url(assets/img/bg/section-bg.jpg);
-    background-size: cover;
-    background-position: center center;
-    height: 200px; /* ou auto, ou min-height */
-}
-
-@media (max-width: 768px) {
-    .breadcrumb-area {
-        height: 150px; /* hauteur réduite en mobile */
-    }
-}
+	
 </style>
 <section class="section-top breadcrumb-area" style="background-image: url(assets/img/au/contact.jpeg);  background-size:cover; background-position: center center;">
     <div class="container">

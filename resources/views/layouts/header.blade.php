@@ -91,7 +91,7 @@
     </style>
     <style>
         .breadcrumb-area {
-           
+
             position: relative;
             width: 100vw;
             margin-left: calc(-50vw + 50%);
@@ -492,7 +492,7 @@
             color: #f99828;
             border: #f99828 1px solid;
             background-color: #ffffff;
-             text-transform: uppercase
+            text-transform: uppercase
         }
 
         .for:hover {
@@ -505,7 +505,7 @@
             color: #ffffff;
             border: #f99828 1px solid;
             background-color: #f99828;
-               text-transform: uppercase;
+            text-transform: uppercase;
         }
 
         .subs:hover {
@@ -661,6 +661,24 @@
             object-fit: cover;
             /* évite la déformation en rognant */
         }
+        .oigtr {
+		text-align: center;
+		font-size: 20px;
+		color: #f99828;
+		text-transform: uppercase;
+	}
+	.breadcrumb-area {
+    background-image: url(assets/img/bg/section-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 200px; /* ou auto, ou min-height */
+}
+
+@media (max-width: 768px) {
+    .breadcrumb-area {
+        height: 150px; /* hauteur réduite en mobile */
+    }
+}
     </style>
     </head>
     <!-- START LOGO WITH CONTACT -->
@@ -683,11 +701,31 @@
                 <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
                     <div class="top_social_profile">
                         <ul>
-                            <li><a href="https://www.facebook.com/profile.php?id=61553480523014&mibextid=ZbWKwL" class="top_f_facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="#" class="top_f_whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
-                            <li><a href="https://www.linkedin.com/company/accesuniversel" class="top_f_linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                            <li><a href="https://wphtml.com/cdn-cgi/l/email-protection" class="top_f_envelope"><i class="fa-solid fa-envelope-circle-check"></i></a></li>
+                            <li>
+                                <a href="https://www.facebook.com/profile.php?id=61553480523014&mibextid=ZbWKwL"
+                                    class="top_f_facebook" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="top_f_whatsapp" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/accesuniversel"
+                                    class="top_f_linkedin" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wphtml.com/cdn-cgi/l/email-protection"
+                                    class="top_f_envelope" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-solid fa-envelope-circle-check"></i>
+                                </a>
+                            </li>
                         </ul>
+
                     </div>
                 </div>
             </div>
@@ -710,7 +748,7 @@
                         <a class="nav-link" href="/contact">Contact</a>
                     </nav>
                 </div>
-                <!--  <div class="col-md-2 text-end">
+               <!--  <div class="col-md-2 text-end">
                     <a href="{{route('login')}}" class="btn for  btn-sm">
                         <i class="fas fa-user"></i>
                     </a>
@@ -788,25 +826,44 @@
                     </div>
                     <div class="social_profile">
                         <ul>
-                            <li><a href="https://www.facebook.com/profile.php?id=61553480523014&mibextid=ZbWKwL" class="top_f_facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="#" class="top_f_whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
-                            <li><a href="https://www.linkedin.com/company/accesuniversel" class="top_f_linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                            <li><a href="https://wphtml.com/cdn-cgi/l/email-protection" class="top_f_envelope"><i class="fa-solid fa-envelope-circle-check"></i></a></li>
+                            <li>
+                                <a href="https://www.facebook.com/profile.php?id=61553480523014&mibextid=ZbWKwL"
+                                    class="top_f_facebook" target="_blank">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="top_f_whatsapp" target="_blank">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/accesuniversel"
+                                    class="top_f_linkedin" target="_blank">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wphtml.com/cdn-cgi/l/email-protection"
+                                    class="top_f_envelope" target="_blank">
+                                    <i class="fa-solid fa-envelope-circle-check"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
-                </div><!--- END COL -->
+
+                </div>
                 <div class="col-lg-3 col-sm-6 col-xs-12">
                     <div class="single_footer single_footer_top_one">
                         <h4>Accès Universel</h4>
                         <ul>
-                            <li><a href="#">Relation Investisseurs</a></li>
-                            <li><a href="#">Terms of Service</a></li>
-                            <li><a href="#">Prochain rendez-vous</a></li>
-                            <li><a href="#">Événements</a></li>
+                            <li><a href="/actuaite">Relation Investisseurs</a></li>
+                            <li><a href="/actuaite">Prochain rendez-vous</a></li>
+                            <li><a href="/actuaite">Événements</a></li>
 
                         </ul>
                     </div>
-                </div><!--- END COL -->
+                </div>
                 <div class="col-lg-3 col-sm-6 col-xs-1">
                     <div class="single_footer single_footer_top">
                         <h4>Liens rapides</h4>
@@ -817,7 +874,7 @@
 
                         </ul>
                     </div>
-                </div><!--- END COL -->
+                </div>
                 <div class="col-lg-3 col-sm-6 col-xs-12">
                     <div class="newsletter-form">
                         <h4>Abonnez-vous pour les mises à jour</h4>
@@ -829,39 +886,25 @@
                             <button type="submit" class="subs">S'abonner</button>
                         </form>
                     </div>
-                </div><!--- END COL -->
-            </div><!--- END ROW -->
-            <!--  <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="footer_copyright">
-                        <p>&copy; 2025 Acces universel.Tout droits réservésd.</p>
-                    </div>
                 </div>
-            </div> -->
-        </div><!--- END CONTAINER -->
+            </div>
+
+        </div>
     </div>
     <!-- END FOOTER -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const currentPath = window.location.pathname;
 
-            // Sélectionner tous les liens de navigation (desktop + mobile)
+
             document.querySelectorAll('.nav-link, .bottom-nav a, .dropdown-menu a').forEach(link => {
                 const linkPath = link.getAttribute('href');
-
-                // Si le chemin EXACT correspond, on ajoute la classe active
                 if (currentPath === linkPath) {
                     link.classList.add('active');
                 }
             });
         });
     </script>
-
-
-    <!--  /////moyen de payement kkiapaye////// -->
-
-
-
 
     <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="assets/js/jquery-1.12.4.min.js"></script>

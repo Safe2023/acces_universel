@@ -57,7 +57,25 @@
 
 <div class="back-to-top"></div>
 
-
+<section class="section-top breadcrumb-area" style="background-image: url(assets/img/au/contacte.jpg);  background-size:cover; background-position: center center;">
+    <div class="container">
+    <div class="col-lg-12 col-sm-12 col-xs-12 text-center">
+                <div class="inner-content clearfix">
+                    <div class="title wow slideInDown animated" data-wow-delay="0.3s" data-wow-duration="1500ms">
+                        <h1>Nous Contactez</h1>
+                    </div>
+                    <div class="border-box"></div>
+                    <div class="breadcrumb-menu wow slideInUp animated" data-wow-delay="0.3s" data-wow-duration="1500ms">
+                        <ul class="clearfix">
+                            <li><a href="{{url('/')}}">Accueil</a></li>
+                            <li><i class="fa fa-angle-double-right" aria-hidden="true"></i></li>
+                            <li class="active">Contact</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
 
 <section class="contact-info py-5 bg-light">
   <div class="container">

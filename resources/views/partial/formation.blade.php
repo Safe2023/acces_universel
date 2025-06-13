@@ -3,7 +3,7 @@
 
 <style>
     .breadcrumb-area {
-      /*   width: 100% !important;
+        /*   width: 100% !important;
         height: 200px;
         background-size: cover;
        
@@ -85,23 +85,26 @@
     <div class="row g-5">
         <div class="col-md-3">
             <div class="position-sticky" style="top: 2rem;">
-
                 <div>
                     <h4 class="fst-italic">Dernières actualités</h4>
                     @foreach ($actualites as $actualite)
-                    <div class="row   py-3  text-decoration-none border-top align-itens-center">
-                        <div class="col-md-4 col-6">
-                            <img src="{{ asset($actualite->image) }}" class="bd-placeholder-img" alt="" width="100%">
+                    <a href="" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
+                        <div class="row py-3 border-top align-items-center">
+                            <div class="col-md-4 col-6">
+                                <img src="{{ asset($actualite->image) }}" class="bd-placeholder-img" alt="" width="100%">
+                            </div>
+                            <div class="col-md-8 col-6">
+                                <h6 class="mb-0">{{ $actualite->titre }}</h6>
+                                <small class="text-body-secondary">
+                                    {{ \Carbon\Carbon::parse($actualite->date)->format('M d, Y') }} |
+                                </small>
+                            </div>
                         </div>
-                        <div class="col-md-8 col-6">
-                            <h6 class="mb-0">{{ $actualite->titre }}</h6>
-                            <small class="text-body-secondary"> {{ \Carbon\Carbon::parse($actualite->date)->format('M d, Y') }} |</small>
-                        </div>
-                    </div>
+                    </a>
                     @endforeach
                 </div>
-
             </div>
+
         </div>
         <div class="col-md-9">
             <div class="container mb-5">
