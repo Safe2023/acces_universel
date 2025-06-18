@@ -1,45 +1,7 @@
 @extends('layouts.header')
 @section('content')
-<style>
-	.logo {
-		font-weight: 700;
-		font-size: 28px;
-		display: flex;
-		align-items: center;
-		gap: 10px;
-		cursor: default;
-		user-select: none;
-	}
 
-	/* Animation sur l'icône œil */
-	.logo i {
-		animation: eyePulse 2.5s infinite;
-		color: #fff;
-		font-size: 28px;
-		transition: transform 0.3s ease;
-	}
 
-	/* Petit effet au survol sur l'icône */
-	.logo:hover i {
-		transform: scale(1.2) rotate(15deg);
-		color: #f99828;
-	}
-
-	@keyframes eyePulse {
-
-		0%,
-		100% {
-			transform: scale(1);
-			opacity: 1;
-		}
-
-		50% {
-			transform: scale(1.1);
-			opacity: 0.85;
-		}
-	}
-</style>
-<!-- START HOME -->
 <div id="fw_al_007" class="carousel ps_rotate_scale_c ps_indicators_l ps_control_rotate_f swipe_x ps_easeOutQuint" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
 	<!-- Indicators -->
 	<ol class="carousel-indicators">
@@ -52,7 +14,7 @@
 		<!-- First Slide -->
 		<div class="carousel-item active">
 			<!-- Slide Background -->
-			<img src="assets/img/au/welcom.jpg" alt="slider image" />
+			<img src="assets/img/au/utilistaeur4.jpg" alt="slider image" />
 			<!-- Slide Text Layer -->
 			<div class="fw_al_007_slide">
 				<h3 data-animation="animated flipInX">Nous sommes là pour</h3>
@@ -78,7 +40,7 @@
 		<!-- Third Slide -->
 		<div class="carousel-item">
 			<!-- Slide Background -->
-			<img src="assets/img/au/impartialite.jpg" alt="slider image" />
+			<img src="assets/img/au/utilisateur1.jpg" alt="slider image" />
 			<!-- Slide Text Layer -->
 			<div class="fw_al_007_slide">
 				<h3 data-animation="animated flipInX">Allons-y maintenant</h3>
@@ -99,15 +61,13 @@
 		<span class="fa fa-angle-right" aria-hidden="true"></span>
 		<span class="sr-only">Next</span>
 	</a>
-</div> <!-- End Paradise Slider -->
-<!-- END  HOME -->
+</div> 
 
-<!-- START ABOUT FEATURE CONTENT -->
 <section class="feature section-padding mt-5">
 	<div class="container">
 		<div class="section-title text-center mb-5">
 			<h2>L'EXPERTISE SUR MESURE</h2>
-			<p>Que vous soyez une entreprise en pleine croissance, un entrepreneur ambitieux ou une marque à la recherche d’impact, notre mission est claire : vous propulser dans l’ère numérique avec des solutions innovantes, esthétiques et performantes.</p>
+			<p>Que vous soyez une entreprise en expansion, un entrepreneur déterminé ou une marque désireuse de renforcer son impact, nous vous accompagnons activement dans votre transformation digitale. Grâce à des solutions personnalisées, alliant innovation, design soigné et performance, nous contribuons à faire évoluer votre présence en ligne, à optimiser vos processus et à accroître votre compétitivité dans un environnement numérique en perpétuelle évolution.</p>
 		</div>
 		<div class="row as_box ">
 			<div class="col-lg-3 col-sm-6 col-xs-12 no-padding">
@@ -225,54 +185,64 @@
 				<!-- SLIDE 1 -->
 				<div class="carousel-item active">
 					<div class="row">
+						
+						<div class="col-md-4">
+							<div class="single_service ss_five text-center">
+								<img src="assets/img/service-icon/seo.png" alt="" />
+								<h3>Conception d’Application web et Mobile</h3>
+								<p class="short-text">
+									Nous concevons et développons des applications web et mobiles innovantes, adaptées aux besoins spécifiques
+									<br> <a href="#" id="voirplus">voir plus</a>
+								</p>
+								<p id="pole" style="display: none;">
+									Nous concevons et développons des applications web et mobiles innovantes, adaptées aux besoins spécifiques de nos clients, leur facilitant ainsi la gestion et le management de leurs projets/programmes.
+									Parmi nos réalisations : <strong>DévCom</strong> et <strong>Perform Assure Pro</strong>, des solutions qui optimisent la communication, la gestion et la productivité.
+									Notre expertise couvre toutes les étapes : conception, développement, tests et maintenance.
+									<a href="#" id="voirmoin">voir moins</a>
+								</p>
+							</div>
+						</div>
+	
 						<div class="col-md-4">
 							<div class="single_service ss_five text-center">
 								<img src="assets/img/service-icon/media.png" alt="" />
-								<h3>Suivi et évaluation des projets</h3>
-								<p>Nous mettons en place des dispositifs adaptés pour suivre l’avancement des projets, mesurer leur impact, et orienter les décisions. Nos approches sont participatives et basées sur des indicateurs de performance fiables.</p>
+								<h3>Projets durables </h3>
+								<p>Nous promouvons des initiatives intégrant les dimensions environnementales et sociales, inscrivant ainsi vos projets dans une dynamique de durabilité et de responsabilité sociétale.</p>
+							</div>
+						</div>
+	
+						<div class="col-md-4">
+							<div class="single_service ss_five text-center">
+								<img src="assets/img/service-icon/backlink.png" alt="" />
+								<h3>Intermédiation et gestion des coopérants volontaires </h3>
+								<p>Nous assurons la coordination, le suivi et la formation des coopérants volontaires, pour un impact optimal dans la réalisation de projets de développement</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					
+					<!-- SLIDE 2 -->
+					<div class="carousel-item">
+						<div class="row">
+						<div class="col-md-4">
+							<div class="single_service ss_five text-center">
+								<img src="assets/img/service-icon/media.png" alt="" />
+								<h3>Conseil en développement et assistance </h3>
+								<p>Nous vous offrons un accompagnement stratégique dans la conception et la mise en œuvre de solutions innovantes, adaptées à vos besoins spécifiques, pour favoriser une croissance pérenne et structurée. </p>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="single_service ss_five text-center">
 								<img src="assets/img/service-icon/audit.png" alt="" />
-								<h3>Conseil en développement et gouvernances</h3>
+								<h3>Consultation en analyse projets </h3>
 								<p>Nous accompagnons les acteurs publics et privés dans l’élaboration, la mise en œuvre et l’évaluation de stratégies de développement local, régional ou national, en promouvant la transparence, la participation citoyenne et l’efficacité des institutions.</p>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="single_service ss_five text-center">
 								<img src="assets/img/service-icon/outreach.png" alt="" />
-								<h3>Industries Culturelles et Créatives</h3>
-								<p>Nous soutenons les projets culturels à fort potentiel en accompagnant les artistes, artisans et entrepreneurs créatifs. Notre objectif : faire de la culture un levier de développement économique, social et identitaire</p>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-
-				<!-- SLIDE 2 -->
-				<div class="carousel-item">
-					<div class="row">
-						<div class="col-md-4">
-							<div class="single_service ss_five text-center">
-								<img src="assets/img/service-icon/seo.png" alt="" />
-								<h3>Conception de solutions informatiques</h3>
-								<p>Nous développons des plateformes et des outils numériques (applications web, bases de données, tableaux de bord) qui facilitent la collecte, le traitement et l’analyse de l’information pour une meilleure prise de décision</p>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="single_service ss_five text-center">
-								<img src="assets/img/service-icon/media.png" alt="" />
-								<h3>Renforcement des capacités</h3>
-								<p>Nos formations sont pensées pour répondre aux besoins réels du terrain. Nous renforçons les compétences techniques, managériales et organisationnelles des bénéficiaires pour une montée en compétence durable.</p>
-							</div>
-						</div>
-
-						<div class="col-md-4">
-							<div class="single_service ss_five text-center">
-								<img src="assets/img/service-icon/backlink.png" alt="" />
-								<h3>Conseil en données probantes</h3>
-								<p>Nous aidons nos partenaires à produire, interpréter et exploiter les données issues de la recherche, des statistiques ou du terrain. Ces données sont traduites en recommandations opérationnelles pour guider les politiques et les projets.</p>
+								<h3>Formation et éducation </h3>
+								<p>Nos formations sont axées sur le renforcement des compétences et des capacités locales, contribuant au développement professionnel et personnel des membres de votre organisation. </p>
 							</div>
 						</div>
 					</div>
@@ -593,11 +563,35 @@
 					<a href="#"><img src="assets/img/au/partenair5.jpeg" alt="image"></a>
 					<a href="#"><img src="assets/img/au/partenair6.jpeg" alt="image"></a>
 					<a href="#"><img src="assets/img/au/partenair7.jpeg" alt="image"></a>
+					<a href="#"><img src="assets/img/au/part.jpeg" alt="image"></a>
 				</div>
 			</div><!-- END COL  -->
 		</div><!--END  ROW  -->
 	</div><!-- END CONTAINER  -->
 </div>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		var voirplus = document.getElementById("voirplus");
+		var voirmoin = document.getElementById("voirmoin");
+		var pole = document.getElementById("pole");
+		pole.style.display = "none";
+		voirplus.addEventListener("click", function(e) {
+			e.preventDefault();
+			pole.style.display = "block";
+			voirplus.style.display = "none";
+		});
+		voirmoin.addEventListener("click", function(e) {
+			e.preventDefault();
+			pole.style.display = "none";
+			voirplus.style.display = "inline";
+		});
+	});
+</script>
+
+
+
+
 <style>
 	.partner {
 		display: flex;

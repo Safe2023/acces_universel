@@ -88,231 +88,7 @@
             border: #f99828;
             font-weight: bold;
         }
-    </style>
-    <style>
-        .breadcrumb-area {
 
-            position: relative;
-            width: 100vw;
-            margin-left: calc(-50vw + 50%);
-            min-height: 300px;
-            padding: 297px 0 202px;
-            background-image: url('assets/img/au/formation.jpg');
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: contain;
-            background-color: #222;
-            z-index: 10;
-        }
-
-        .breadcrumb-area::before {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.50);
-            content: "";
-            z-index: -1;
-        }
-
-
-        .breadcrumb-area .inner-content {
-            position: relative;
-            display: block;
-            text-align: center;
-        }
-
-        .breadcrumb-area .title {
-            position: relative;
-            display: block;
-        }
-
-        .breadcrumb-area .title h1 {
-            color: #ffffff;
-            font-size: 72px;
-            line-height: 80px;
-            font-weight: 700;
-            text-transform: none;
-        }
-
-        .breadcrumb-area .inner-content .border-box {
-            position: relative;
-            display: block;
-            width: 70px;
-            height: 2px;
-            background: #ffffff;
-            margin: 14px auto 24px;
-        }
-
-        .breadcrumb-area .breadcrumb-menu {
-            position: relative;
-            display: block;
-            line-height: 0;
-        }
-
-        .breadcrumb-area .breadcrumb-menu ul {
-            position: relative;
-            display: block;
-            overflow: hidden;
-            text-align: center;
-        }
-
-        .breadcrumb-area .breadcrumb-menu ul li {
-            position: relative;
-            display: inline-block;
-            float: none;
-            color: #ffffff;
-            font-size: 18px;
-            line-height: 26px;
-            font-weight: 400;
-            text-transform: capitalize;
-            transition: all 500ms ease;
-            padding: 0 3px;
-            font-family: 'Hind Siliguri', sans-serif;
-        }
-
-        .breadcrumb-area .breadcrumb-menu ul li a {
-            color: #ffffff;
-            transition: all 500ms ease;
-        }
-
-
-
-        /*** 
-=============================================
-    Breadcrumb Area Style2 Css
-=============================================
-***/
-        .breadcrumb-area.style2 {
-            padding: 348px 0 212px;
-        }
-
-        .breadcrumb-area.style2::before {
-            display: none;
-        }
-
-        .breadcrumb-area.style2 .inner-content {
-            text-align: left;
-        }
-
-        .breadcrumb-area.style2 .title h1 {
-            color: #52a85e;
-            font-weight: 700;
-            margin-bottom: 18px;
-        }
-
-        .breadcrumb-area.style2 .breadcrumb-menu ul {
-            text-align: left;
-        }
-
-        .breadcrumb-area.style2 .breadcrumb-menu ul li {
-            color: #222222;
-            padding: 0 3px;
-            text-transform: uppercase;
-        }
-
-        .breadcrumb-area.style2 .breadcrumb-menu ul li a {
-            color: #222222;
-        }
-
-
-
-        /*** 
-=============================================
-    Breadcrumb Area Style3 Css
-=============================================
-***/
-        .breadcrumb-area.style3 {
-            padding: 188px 0 192px;
-        }
-
-        .breadcrumb-area.style3::before {
-            display: none;
-        }
-
-        .breadcrumb-area.style3 .inner-content {
-            text-align: left;
-        }
-
-        .breadcrumb-area.style3 .title h1 {
-            color: #ffffff;
-            font-weight: 800;
-            margin-bottom: 18px;
-        }
-
-        .breadcrumb-area.style3 .breadcrumb-menu ul {
-            text-align: left;
-        }
-
-        .breadcrumb-area.style3 .breadcrumb-menu ul li {
-            color: #ffffff;
-            padding: 0 3px;
-            text-transform: capitalize;
-        }
-
-        .breadcrumb-area.style3 .breadcrumb-menu ul li a {
-            color: #ffffff;
-        }
-    </style>
-    <style>
-        .contact-section .contact-info p {
-            font-weight: 600;
-            color: #000000;
-            margin-bottom: 0;
-        }
-
-        .contact-section .contact-info p a {
-            color: #1a1a1a;
-        }
-
-        .contact-section .contact-info p span {
-            display: block;
-            font-size: 16px;
-            font-weight: 400;
-            color: #999999;
-        }
-
-        .contact-section .icon {
-            margin-top: 10px;
-        }
-
-        .contact-section .contact-info .icon span {
-            font-size: 20px;
-            color: #F7921D;
-        }
-
-        @media (min-width: 992px) {
-            .contact-section .contact-info .border-height {
-                border-left: 1px solid rgba(0, 0, 0, 0.1);
-                border-right: 1px solid rgba(0, 0, 0, 0.1);
-            }
-        }
-
-        .contact-section .contact-form {
-            width: 100%;
-        }
-
-        .mes {
-            color: #fc9400;
-        }
-
-        .mes:hover {
-            color: #161616;
-        }
-
-        .modal1 {
-            background: #F7921D;
-            color: #fff;
-        }
-
-        .modal1:hover {
-            background: #fff;
-            color: #F7921D;
-            border: 1px solid #fc9400;
-        }
-    </style>
-    <style>
         .breadcrumb-area {
             position: relative;
             background-attachment: scroll;
@@ -320,7 +96,6 @@
             background-repeat: no-repeat;
             background-size: cover;
             padding: 297px 0 202px;
-            min-height: 300px;
             z-index: 10;
         }
 
@@ -397,83 +172,62 @@
 
 
 
-        /*** 
-=============================================
-    Breadcrumb Area Style2 Css
-=============================================
-***/
-        .breadcrumb-area.style2 {
-            padding: 348px 0 212px;
+        .contact-section .contact-info p {
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 0;
         }
 
-        .breadcrumb-area.style2::before {
-            display: none;
+        .contact-section .contact-info p a {
+            color: #1a1a1a;
         }
 
-        .breadcrumb-area.style2 .inner-content {
-            text-align: left;
+        .contact-section .contact-info p span {
+            display: block;
+            font-size: 16px;
+            font-weight: 400;
+            color: #999999;
         }
 
-        .breadcrumb-area.style2 .title h1 {
-            color: #52a85e;
-            font-weight: 700;
-            margin-bottom: 18px;
+        .contact-section .icon {
+            margin-top: 10px;
         }
 
-        .breadcrumb-area.style2 .breadcrumb-menu ul {
-            text-align: left;
+        .contact-section .contact-info .icon span {
+            font-size: 20px;
+            color: #F7921D;
         }
 
-        .breadcrumb-area.style2 .breadcrumb-menu ul li {
-            color: #222222;
-            padding: 0 3px;
-            text-transform: uppercase;
+        @media (min-width: 992px) {
+            .contact-section .contact-info .border-height {
+                border-left: 1px solid rgba(0, 0, 0, 0.1);
+                border-right: 1px solid rgba(0, 0, 0, 0.1);
+            }
         }
 
-        .breadcrumb-area.style2 .breadcrumb-menu ul li a {
-            color: #222222;
+        .contact-section .contact-form {
+            width: 100%;
         }
 
-
-
-        /*** 
-=============================================
-    Breadcrumb Area Style3 Css
-=============================================
-***/
-        .breadcrumb-area.style3 {
-            padding: 188px 0 192px;
+        .mes {
+            color: #fc9400;
         }
 
-        .breadcrumb-area.style3::before {
-            display: none;
+        .mes:hover {
+            color: #161616;
         }
 
-        .breadcrumb-area.style3 .inner-content {
-            text-align: left;
+        .modal1 {
+            background: #F7921D;
+            color: #fff;
         }
 
-        .breadcrumb-area.style3 .title h1 {
-            color: #ffffff;
-            font-weight: 800;
-            margin-bottom: 18px;
+        .modal1:hover {
+            background: #fff;
+            color: #F7921D;
+            border: 1px solid #fc9400;
         }
 
-        .breadcrumb-area.style3 .breadcrumb-menu ul {
-            text-align: left;
-        }
-
-        .breadcrumb-area.style3 .breadcrumb-menu ul li {
-            color: #ffffff;
-            padding: 0 3px;
-            text-transform: capitalize;
-        }
-
-        .breadcrumb-area.style3 .breadcrumb-menu ul li a {
-            color: #ffffff;
-        }
-    </style>
-    <style>
         .team-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -513,13 +267,11 @@
             border: #f99828 1px solid;
             background-color: #ffffff;
         }
-    </style>
 
-    <style>
         body {
             margin: 0;
             padding-bottom: 100px;
-            /* pour laisser la place au menu mobile */
+
         }
 
         a.nav-link,
@@ -541,7 +293,6 @@
             color: #f99828 !important;
         }
 
-        /* NAVBAR DESKTOP */
         .dropdown-menu {
             display: none;
             position: absolute;
@@ -566,7 +317,6 @@
             background-color: #f8f9fa;
         }
 
-        /* MENU MOBILE FIXE EN BAS */
         .bottom-nav {
             position: fixed;
             bottom: 0;
@@ -603,7 +353,7 @@
             color: #f99828;
         }
 
-        /* DROPDOWN MOBILE */
+
         .dropdown-menu-mobile {
             position: fixed;
             bottom: 60px;
@@ -657,31 +407,169 @@
         .card-img-top {
             width: 100%;
             height: 250px;
-            /* hauteur fixe pour uniformiser les cartes */
-            object-fit: cover;
-            /* évite la déformation en rognant */
-        }
-        .oigtr {
-		text-align: center;
-		font-size: 20px;
-		color: #f99828;
-		text-transform: uppercase;
-	}
-	.breadcrumb-area {
-    background-image: url(assets/img/bg/section-bg.jpg);
-    background-size: cover;
-    background-position: center center;
-    height: 200px; /* ou auto, ou min-height */
-}
 
-@media (max-width: 768px) {
-    .breadcrumb-area {
-        height: 150px; /* hauteur réduite en mobile */
-    }
-}
+            object-fit: cover;
+
+        }
+
+        .oigtr {
+            text-align: center;
+            font-size: 20px;
+            color: #f99828;
+            text-transform: uppercase;
+        }
+
+
+        @media (max-width: 768px) {
+            .breadcrumb-area {
+                height: 150px;
+
+            }
+        }
+
+        .oigtr {
+            text-align: center;
+            font-size: 20px;
+            color: #f99828;
+            text-transform: uppercase;
+        }
+
+        .about-video-section {
+            background: linear-gradient(to right, #f8f9fa, #ffffff);
+        }
+
+        .video-container iframe {
+            border: none;
+            min-height: 300px;
+        }
+
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .video-container {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .shadow-section {
+            background-color: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+            padding: 2rem;
+        }
+
+        .intervention-section {
+            background-color: #fff;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            height: 100%;
+        }
+
+        .intervention-title {
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            color: #f99828;
+
+            padding-bottom: 0.4rem;
+            text-transform: uppercase;
+        }
+
+        .intervention-item {
+            font-size: 15px;
+            padding: 0.4rem 0.6rem;
+            border-left: 3px solid #f99828;
+            background-color: #fef7f0;
+            border-radius: 0.3rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+
+        .intervention-item:hover {
+            background-color: #f99828;
+            color: #fff;
+            transform: translateX(5px);
+        }
+
+
+        .logo {
+            font-weight: 700;
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: default;
+            user-select: none;
+        }
+
+
+        .logo i {
+            animation: eyePulse 2.5s infinite;
+            color: #fff;
+            font-size: 28px;
+            transition: transform 0.3s ease;
+        }
+
+
+        .logo:hover i {
+            transform: scale(1.2) rotate(15deg);
+            color: #f99828;
+        }
+
+        @keyframes eyePulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 0.85;
+            }
+        }
+
+
+        @media (max-width: 768px) {
+            .breadcrumb-area {
+                height: 150px;
+            }
+        }
+
+
+        .pagination .page-item .page-link {
+            color: #f99828;
+            border: 1px solid #f99828;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .pagination .page-item.active .page-link {
+            background-color: #f99828;
+            color: white;
+            border-color: #f99828;
+            font-weight: 600;
+        }
+
+        .pagination .page-item .page-link:hover {
+            background-color: #f99828;
+            color: white;
+            border-color: #f99828;
+        }
+
+        .pagination .page-item.disabled .page-link {
+            color: #f99828;
+            opacity: 0.5;
+            pointer-events: none;
+            border-color: #f99828;
+        }
     </style>
     </head>
-    <!-- START LOGO WITH CONTACT -->
+
     <section class="logo-contact">
         <div class="container">
             <div class="row">
@@ -708,7 +596,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="top_f_whatsapp" target="_blank" rel="noopener noreferrer">
+                                <a href="https://wa.me/2290191718686" class="top_f_whatsapp" target="_blank" rel="noopener noreferrer">
                                     <i class="fa-brands fa-whatsapp"></i>
                                 </a>
                             </li>
@@ -719,9 +607,9 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://wphtml.com/cdn-cgi/l/email-protection"
+                                <a href="https://accesuniversel.bj/ "
                                     class="top_f_envelope" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa-solid fa-envelope-circle-check"></i>
+                                    <i class="bi bi-globe"></i>
                                 </a>
                             </li>
                         </ul>
@@ -833,7 +721,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="top_f_whatsapp" target="_blank">
+                                <a href="https://wa.me/2290191718686" class="top_f_whatsapp" target="_blank">
                                     <i class="fa-brands fa-whatsapp"></i>
                                 </a>
                             </li>
@@ -844,9 +732,9 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://wphtml.com/cdn-cgi/l/email-protection"
+                                <a href="https://accesuniversel.bj/"
                                     class="top_f_envelope" target="_blank">
-                                    <i class="fa-solid fa-envelope-circle-check"></i>
+                                    <i class="bi bi-globe"></i>
                                 </a>
                             </li>
                         </ul>

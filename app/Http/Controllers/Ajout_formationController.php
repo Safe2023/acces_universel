@@ -63,11 +63,12 @@ class Ajout_formationController extends Controller
     {
         $request->validate([
             "nom" => "required",
-            "frais_dinscription" => "required",
-            "cout_formation" => "required",
-            "debut_formation" => "required",
-            "fin_formation" => "required",
-            "delais_dinscription" => "required",
+            'frais_dinscription' => 'nullable|string',
+
+            'debut_formation' => 'nullable|string',
+            'fin_formation' => 'nullable|string',
+            'delais_dinscription' => 'nullable|string',
+            
             "description" => "required",
             'image' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
             'document' => 'nullable|file|max:5120',

@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::create('ajout_formations', function (Blueprint $table) {
             $table->id();
             $table->string('nom');
-            $table->string('frais_dinscription');
+            $table->string('frais_dinscription')->nullable();
             $table->string('cout_formation');
-            $table->string('debut_formation');
-            $table->string('fin_formation');
-            $table->string('delais_dinscription');
+            $table->string('debut_formation')->nullable();
+            $table->string('fin_formation')->nullable();
+            $table->string('delais_dinscription')->nullable();
             $table->string('image');
             $table->string('document')->nullable();
             $table->string('marquette')->nullable();

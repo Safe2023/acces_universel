@@ -1,58 +1,8 @@
 @extends('layouts.header')
 @section('content')
 
-<style>
-    .breadcrumb-area {
-        /*   width: 100% !important;
-        height: 200px;
-        background-size: cover;
-       
-      
-    
-        padding: 297px 0 202px;
-        min-height: 300px;
-        background-size: contain;
-      
-        background-repeat: no-repeat;
-        background-color: #222; */
-        /* ou auto, ou min-height */
-    }
 
-    @media (max-width: 768px) {
-        .breadcrumb-area {
-            height: 150px;
-            /* hauteur réduite en mobile */
-        }
-    }
-
-    /* Pagination personnalisée avec ta couleur */
-    .pagination .page-item .page-link {
-        color: #f99828;
-        border: 1px solid #f99828;
-        transition: background-color 0.3s, color 0.3s;
-    }
-
-    .pagination .page-item.active .page-link {
-        background-color: #f99828;
-        color: white;
-        border-color: #f99828;
-        font-weight: 600;
-    }
-
-    .pagination .page-item .page-link:hover {
-        background-color: #f99828;
-        color: white;
-        border-color: #f99828;
-    }
-
-    .pagination .page-item.disabled .page-link {
-        color: #f99828;
-        opacity: 0.5;
-        pointer-events: none;
-        border-color: #f99828;
-    }
-</style>
-<section class="section-top breadcrumb-area ">
+<section class="section-top breadcrumb-area" style="background-image: url(assets/img/au/formation.jpg);  background-size:cover; background-position: center center;">
     <div class="container">
         <div class="col-lg-12 col-sm-12 col-xs-12 text-center">
             <div class="inner-content clearfix">
@@ -88,7 +38,7 @@
                 <div>
                     <h4 class="fst-italic">Dernières actualités</h4>
                     @foreach ($actualites as $actualite)
-                    <a href="" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
+                    <a href="https://www.linkedin.com/company/accesuniversel" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
                         <div class="row py-3 border-top align-items-center">
                             <div class="col-md-4 col-6">
                                 <img src="{{ asset($actualite->image) }}" class="bd-placeholder-img" alt="" width="100%">
@@ -141,7 +91,7 @@
                                 </button>
 
                                 <!-- Bouton de réservation -->
-                                <a href="#" class="btn subs btn-sm">Réserver <i class="bi bi-bag ms-1"></i></a>
+                                <a href="https://wa.me/2290191718686" class="btn subs btn-sm">Réserver <i class="bi bi-bag ms-1"></i></a>
                             </div>
                         </div>
                     </div>
@@ -202,14 +152,11 @@
                                         </div>
                                     </div>
                                 </div>
-
-                                <!-- Description -->
                                 <p class="mb-4 text-muted text-justify">
                                     <strong>Description :</strong><br>
                                     {{ $formation->description }}
                                 </p>
 
-                                <!-- Documents -->
                                 @if($formation->document || $formation->marquette)
                                 <div class="mt-4">
                                     <h6 class="fw-bold text-primary">📁 Documents associés</h6>
@@ -225,12 +172,10 @@
                                 @endif
 
                             </div>
-
-                            <!-- Footer -->
                             <div class="modal-footer bg-white rounded-bottom-4">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
 
-                                <a href="javascript:void(0);"
+                                <a href="https://wa.me/2290191718686"
                                     onclick="payerFormation('{{ $formation->id }}', '{{ $formation->frais_dinscription }}', '{{ $formation->nom }}')"
                                     class="btn subs btn-sm">
                                     Réserver cette formation
