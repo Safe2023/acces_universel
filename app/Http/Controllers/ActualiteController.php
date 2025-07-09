@@ -61,7 +61,7 @@ class ActualiteController extends Controller
         $actualites = Actualite::latest()->get(); 
         return view('partial.actualite', compact('actualites'));
     }
-    
+        
     /**
      * Show the form for editing the specified resource.
      */

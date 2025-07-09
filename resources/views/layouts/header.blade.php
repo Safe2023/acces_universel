@@ -2,38 +2,28 @@
 <html lang="en">
 
 <head>
-    <!-- Meta -->
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Chorbi - IT Solution & Business Service HTML5 Template">
     <meta name="keywords" content="themes_master, blog, business, clean, corporate, creative, ecommerce, gallery, multipurpose, one page, photography, portfolio, responsive, shop">
     <meta name="author" content="themes_master">
-    <!-- SITE TITLE -->
     <title>ACCES UNIVERSEL</title>
-    <!-- Latest Bootstrap min CSS -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-    <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/themify-icons.css">
-    <!--- owl carousel Css-->
     <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.css">
     <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
-    <!--slicknav Css-->
     <link rel="stylesheet" href="assets/css/slicknav.css">
-    <!-- MAGNIFIC CSS -->
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <!-- animate CSS -->
     <link rel="stylesheet" href="assets/css/animate.css">
-    <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/slider.css">
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/flaticon.css">
@@ -286,6 +276,7 @@
         .dropdown-menu a:hover,
         .bottom-nav a:hover {
             color: #f99828 !important;
+
         }
 
         .bottom-nav a.active,
@@ -314,7 +305,11 @@
         }
 
         .dropdown-menu a:hover {
-            background-color: #f8f9fa;
+            background-color: #fff;
+        }
+
+        .dropdown-menu a.active {
+            background-color: #fff;
         }
 
         .bottom-nav {
@@ -567,6 +562,22 @@
             pointer-events: none;
             border-color: #f99828;
         }
+
+        @media (max-width: 768px) {
+            .breadcrumb-area .title h1 {
+                font-size: 36px;
+                line-height: 44px;
+                text-align: center;
+                padding: 0 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .breadcrumb-area .title h1 {
+                font-size: 28px;
+                line-height: 36px;
+            }
+        }
     </style>
     </head>
 
@@ -578,14 +589,13 @@
                         <i class="fa fa-home"></i>
                         <h4><strong>91718686 / 97138302</strong></h4>
                     </div>
-                </div><!--- END COL -->
-
+                </div>
                 <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
                     <div class="single-top-contact">
                         <i class="fa fa-clock-o"></i>
                         <h4><strong>Ouvert du lundi au vendredi : 08h - 18h</strong></h4>
                     </div>
-                </div><!--- END COL -->
+                </div>
                 <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
                     <div class="top_social_profile">
                         <ul>
@@ -619,8 +629,6 @@
             </div>
         </div>
     </section>
-
-    <!-- NAVBAR DESKTOP -->
     <header class="d-none d-md-block">
         <div class="container">
             <div class="row align-items-center py-3">
@@ -632,11 +640,20 @@
                         <a class="nav-link" href="/">Accueil</a>
                         <a class="nav-link" href="/apropos">À propos</a>
                         <a class="nav-link" href="/formation">Formation</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/informatique">Informatique</a></li>
+                                <li><a class="dropdown-item" href="/comptabilite">Conseil en Développement</a></li>
+                            </ul>
+                        </li>
                         <a class="nav-link" href="/actualite">Actualités</a>
                         <a class="nav-link" href="/contact">Contact</a>
                     </nav>
                 </div>
-               <!--  <div class="col-md-2 text-end">
+                <!--  <div class="col-md-2 text-end">
                     <a href="{{route('login')}}" class="btn for  btn-sm">
                         <i class="fas fa-user"></i>
                     </a>
@@ -645,7 +662,6 @@
         </div>
     </header>
 
-    <!-- NAVBAR MOBILE HAUT -->
     <header class="d-flex d-md-none justify-content-between align-items-center p-2 shadow-sm bg-white">
         <a href="#"><img src="assets/img/au/logo_04.webp" alt="Logo" /></a>
         <!--  <a href="{{route('login')}}" class="btn for  btn-sm">
@@ -667,8 +683,17 @@
             <i class="fa-solid fa-chalkboard-user"></i>
             <span>Formation</span>
         </a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-concierge-bell"></i>
+                <span>Services</span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/informatique">Informatique</a></li>
+                <li><a class="dropdown-item" href="/comptabilite">Conseil en Développement</a></li>
+            </ul>
+        </li>
         <a href="/actualite">
-
             <i class="fas fa-blog"></i>
             <span>Actualités</span>
         </a>
@@ -678,9 +703,6 @@
         </a>
     </nav>
 
-
-
-    <!-- Bootstrap JS + Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         const toggleBtn = document.getElementById('mobileBlogToggle');
@@ -703,7 +725,6 @@
     <main>
         @yield('content')
     </main>
-    <!-- START FOOTER -->
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -745,9 +766,10 @@
                     <div class="single_footer single_footer_top_one">
                         <h4>Accès Universel</h4>
                         <ul>
-                            <li><a href="/actuaite">Relation Investisseurs</a></li>
-                            <li><a href="/actuaite">Prochain rendez-vous</a></li>
-                            <li><a href="/actuaite">Événements</a></li>
+                            <li><a href="/actualite">Prochain rendez-vous</a></li>
+                            <li><a href="/comptabilite">Conseil en Développement</a></li>
+                            <li><a href="/informatique">formation</a></li>
+                            <li><a href="/actualite">Événements</a></li>
 
                         </ul>
                     </div>
@@ -757,15 +779,15 @@
                         <h4>Liens rapides</h4>
                         <ul>
                             <li><a href="/">Accueil</a></li>
-                            <li><a href="/formation">Formation</a></li>
+                            <li><a href="/apropos">A propos</a></li>
+                            <li><a href="/informatique">Informatique</a></li>
                             <li><a href="/contact">Contactez-nous</a></li>
-
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-xs-12">
                     <div class="newsletter-form">
-                        <h4>Abonnez-vous pour les mises à jour</h4>
+                        <h4>Recevez nos nouveautés</h4>
                         @if(session('success'))<div class="alert alert-success">{{ session('success') }}</div>
                         @endif
                         <form action="{{route('newsletter.newsletter')}}" method="post" class="subscribe">
@@ -779,7 +801,6 @@
 
         </div>
     </div>
-    <!-- END FOOTER -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const currentPath = window.location.pathname;

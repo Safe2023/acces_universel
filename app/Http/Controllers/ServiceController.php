@@ -23,7 +23,7 @@ class ServiceController extends Controller
             'massage' => 'required',
 
         ]);
-       
+     
         try {
             Mail::to('beresaf@gmail.com')->send(new EnvoieMail($request->all()));
             return redirect()->back()->with('success', 'Votre message a bien été envoyé !');
@@ -54,6 +54,13 @@ class ServiceController extends Controller
     public function apropos()
     {
         return view("partial.apropos");
+    }
+      public function comptabilite()
+    {
+        return view("partial.comptabilite");
+    }  public function informatique()
+    {
+        return view("partial.informatique");
     }
     public function index()
     {

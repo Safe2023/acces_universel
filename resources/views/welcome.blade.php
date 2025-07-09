@@ -20,7 +20,7 @@
 				<h3 data-animation="animated flipInX">Nous sommes là pour</h3>
 				<h1 data-animation="animated flipInX">Donner du Futur à votre investissement</h1>
 				<p data-animation="animated flipInX">Nous serons ravis de vous accueillir au sein de notre agence.</p>
-				<a href="#service" data-animation="animated flipInX">En savoir plus</a>
+				<a href="/apropos" data-animation="animated flipInX">En savoir plus</a>
 			</div>
 		</div>
 		<!-- End of Slide -->
@@ -33,7 +33,7 @@
 				<h3 data-animation="animated flipInX">Venez vers nous</h3>
 				<h1 data-animation="animated flipInX">Choisissez l'agence parfaite</h1>
 				<p data-animation="animated flipInX">Nous sommes impatients de vous accueillir dans notre agence.</p>
-				<a href="#service" data-animation="animated flipInX">En savoir plus</a>
+				<a href="/apropos" data-animation="animated flipInX">En savoir plus</a>
 			</div>
 		</div>
 		<!-- End of Slide -->
@@ -46,7 +46,7 @@
 				<h3 data-animation="animated flipInX">Allons-y maintenant</h3>
 				<h1 data-animation="animated flipInX">Votre meilleure agence numérique</h1>
 				<p data-animation="animated flipInX">Ensemble. Nous pouvons façonner un avenir meilleur.</p>
-				<a href="#service" data-animation="animated flipInX">En savoir plus</a>
+				<a href="/apropos" data-animation="animated flipInX">En savoir plus</a>
 			</div>
 		</div>
 		<!-- End of Slide -->

@@ -141,7 +141,7 @@
           @endif
           @if (session('error'))<div class="alert alert-danger">{{session('error')}}</div>
           @endif
-          <form class="form" name="enq" method="post" action="{{route('envoiedemail')}}">
+          <form class="form"  method="post" action="{{route('envoiedemail')}}">
             @csrf
             <div class="row">
               <div class="form-group col-md-6">

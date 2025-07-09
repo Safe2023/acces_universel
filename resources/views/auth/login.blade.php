@@ -81,7 +81,6 @@
                     {{-- @if (Route::has('password.request'))
                         <a href="{{ route('password.request') }}" class="text-muted"><i class="mdi mdi-lock me-1"></i> Mot de passe oublié ?</a>
                     @endif --}}
-                     <p class="mt-2">Pas de compte ? <a href="{{ route('register') }}" class="fw-medium text-primary"> Créer maintenant </a> </p>
                     <div class="mt-1">
                         <p>© <script>document.write(new Date().getFullYear())</script> ACCES UNIVERSEL</p>
                     </div>

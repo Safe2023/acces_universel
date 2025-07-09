@@ -56,6 +56,8 @@ Route::get('/formation', [Ajout_formationController::class, 'search'])->name('se
 Route::get('/apropos', [ServiceController::class, 'apropos'])->name('apropos');
 Route::post('/contact', [ServiceController::class, 'envoiedemail'])->name('envoiedemail');
 Route::post('/newsletter', [ServiceController::class, 'newsletter'])->name('newsletter.newsletter');
+Route::get('/comptabilite', [ServiceController::class, 'comptabilite'])->name('comptabilite');
+Route::get('/informatique', [ServiceController::class, 'informatique'])->name('informatique');
 
 
 Route::get('/formation_details/{id}', [Ajout_formationController::class, 'formation_details'])->name('formation_details');
