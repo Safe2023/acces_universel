@@ -639,7 +639,7 @@
                     <nav class="nav justify-content-center">
                         <a class="nav-link" href="/">Accueil</a>
                         <a class="nav-link" href="/apropos">À propos</a>
-                        <a class="nav-link" href="/formation">Formation</a>
+                        <a class="nav-link" href="/formation">Formations</a>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Services
@@ -681,7 +681,7 @@
         </a>
         <a href="/formation">
             <i class="fa-solid fa-chalkboard-user"></i>
-            <span>Formation</span>
+            <span>Formations</span>
         </a>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
