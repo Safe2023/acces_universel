@@ -242,8 +242,8 @@
 				<div class="single-team-home">
 					<div class="img"><img src="assets/img/au/DG_AU.jpg" class="img-fluid" alt=""></div>
 					<div class="team-content-home">
-						<h6>Saturnine M. K. Médessè</h6>
-						<p>Directrice</p>
+						<h5>Saturnine Mèdessè MICHOZOUNNOU</h5>
+						<p>Directrice générale</p>
 						<ul class="social-home">
 							<li><a href="https://www.facebook.com/share/18xd2ziYZX/" class="facebook-home"><i class="fa-brands fa-facebook-f"></i></a></li>
 							<li><a href="https://www.linkedin.com/in/saturnine-m-k-m%C3%A9dess%C3%A8-37393b17a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="twitter-home"><i class="fa-brands fa-linkedin-in"></i></a></li>
@@ -363,17 +363,16 @@
                         <div class="modal-content">
                             <div class="modal-body p-4">
                                 <div class="row">
-                                    <!-- Image à gauche -->
-                                    <div class="col-md-5">
-                                        <img src="{{ asset($actualite->image) }}" alt="Image" class="img-fluid rounded mb-3">
-                                        <div class="small text-muted text-center" style="font-size: 20px;">
+                                
+                                    <div class="text-center mb-3">
+                                        <img src="{{ asset($actualite->image) }}" alt="Image" class="img-fluid rounded shadow-sm" style="max-height: 300px;width: 100%; object-fit: cover;">
+                                        
+                                    </div>
+									<div class="small text-muted text-center" style="font-size: 20px;">
                                             <span class="">{{ \Carbon\Carbon::parse($actualite->date)->format('d/m/Y') }}</span>
 
                                         </div>
-                                    </div>
-
-                                    <!-- Détails à droite -->
-                                    <div class="col-md-7">
+                                    <div class="row g-3 mb-4">
                                         <h5 class="mb-2 text-center " style="color: #f99828;">{{ $actualite->titre }}</h5>
                                         <p>{{ $actualite->description_complete }}</p>
                                     </div>
