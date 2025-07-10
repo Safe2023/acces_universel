@@ -56,7 +56,7 @@
           <ul class="clearfix">
             <li><a href="{{url('/')}}">Accueil</a></li>
             <li><i class="fa fa-angle-double-right" aria-hidden="true"></i></li>
-            <li class="active">Conseil en développement</li>
+            <li class="active">Conseil/Développement</li>
           </ul>
         </div>
       </div>

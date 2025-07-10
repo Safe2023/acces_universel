@@ -180,82 +180,46 @@
 					<div class="row">
 
 						<div class="col-md-4">
-							<div class="single_service ss_five text-center">
+							<div class="single_service ss_five text-center" style="height: 400px;">
 								<img src="assets/img/service-icon/seo.png" alt="" />
-								<h3>Conception d’Application web et Mobile</h3>
+								<h3>Solutions Informatiques</h3>
 								<p class="short-text">
 									Nous concevons et développons des applications web et mobiles innovantes, adaptées aux besoins spécifiques
 									{{-- <br> <a href="#" id="voirplus">voir plus</a> --}}
 								</p>
-								<p id="pole" style="display: none;">
+								<!-- <p id="pole" style="display: none;">
 									Nous concevons et développons des applications web et mobiles innovantes, adaptées aux besoins spécifiques de nos clients, leur facilitant ainsi la gestion et le management de leurs projets/programmes.
 									Parmi nos réalisations : <strong>DévCom</strong> et <strong>Perform Assure Pro</strong>, des solutions qui optimisent la communication, la gestion et la productivité.
 									Notre expertise couvre toutes les étapes : conception, développement, tests et maintenance.
 									<a href="#" id="voirmoin">voir moins</a>
-								</p>
+								</p> -->
+								Nous développons des outils numériques sur mesure pour répondre aux besoins spécifiques des organisations publiques, privées et communautaires.
 							</div>
 						</div>
 
 						<div class="col-md-4">
-							<div class="single_service ss_five text-center">
+							<div class="single_service ss_five text-center" style="height: 400px;">
 								<img src="assets/img/service-icon/media.png" alt="" />
-								<h3>Projets durables </h3>
-								<p>Nous promouvons des initiatives intégrant les dimensions environnementales et sociales, inscrivant ainsi vos projets dans une dynamique de durabilité et de responsabilité sociétale.</p>
+								<h3>Conseil en Développement & Assistance Technique</h3>
+								<p>Nous accompagnons les acteurs dans la structuration, l’amélioration et la mise en œuvre de leurs stratégies de développement durable.</p>
 							</div>
 						</div>
 
 						<div class="col-md-4">
-							<div class="single_service ss_five text-center">
+							<div class="single_service ss_five text-center" style="height: 400px;">
 								<img src="assets/img/service-icon/backlink.png" alt="" />
-								<h3>Intermédiation et gestion des coopérants volontaires </h3>
-								<p>Nous assurons la coordination, le suivi et la formation des coopérants volontaires, pour un impact optimal dans la réalisation de projets de développement</p>
+								<h3>Industries Culturelles et Créatives (ICC)</h3>
+								<p>ACCES UNIVERSEL valorise les talents locaux et l’économie créative comme levier de développement et d’inclusion.
+</p>
 							</div>
 						</div>
 						</div>
 					</div>
 
-					<!-- SLIDE 2 -->
-					<div class="carousel-item">
-						<div class="row">
-						<div class="col-md-4">
-							<div class="single_service ss_five text-center">
-								<img src="assets/img/service-icon/media.png" alt="" />
-								<h3>Conseil en développement et assistance </h3>
-								<p>Nous vous offrons un accompagnement stratégique dans la conception et la mise en œuvre de solutions innovantes, adaptées à vos besoins spécifiques, pour favoriser une croissance pérenne et structurée. </p>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="single_service ss_five text-center">
-								<img src="assets/img/service-icon/audit.png" alt="" />
-								<h3>Consultation en analyse projets </h3>
-								<p>Nous accompagnons les acteurs publics et privés dans l’élaboration, la mise en œuvre et l’évaluation de stratégies de développement local, régional ou national, en promouvant la transparence, la participation citoyenne et l’efficacité des institutions.</p>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="single_service ss_five text-center">
-								<img src="assets/img/service-icon/outreach.png" alt="" />
-								<h3>Formation et éducation </h3>
-								<p>Nos formations sont axées sur le renforcement des compétences et des capacités locales, contribuant au développement professionnel et personnel des membres de votre organisation. </p>
-							</div>
-						</div>
-					</div>
 				</div>
 
 			</div>
 
-			<!-- CONTROLS -->
-			<button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel" data-bs-slide="prev">
-				<span class="carousel-control-prev-icon"></span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel" data-bs-slide="next">
-				<span class="carousel-control-next-icon"></span>
-			</button>
-
-			<!-- INDICATORS -->
-			<div class="carousel-indicators mt-5">
-				<button type="button" data-bs-target="#serviceCarousel" data-bs-slide-to="0" class="active"></button>
-				<button type="button" data-bs-target="#serviceCarousel" data-bs-slide-to="1"></button>
-			</div>
 		</div>
 	</div>
 </div>
@@ -278,8 +242,8 @@
 				<div class="single-team-home">
 					<div class="img"><img src="assets/img/au/DG_AU.jpg" class="img-fluid" alt=""></div>
 					<div class="team-content-home">
-						<h3>Saturnine MICHOZOUNNOU</h3>
-						<p>Directrice Générale</p>
+						<h6>Saturnine M. K. Médessè</h6>
+						<p>Directrice</p>
 						<ul class="social-home">
 							<li><a href="https://www.facebook.com/share/18xd2ziYZX/" class="facebook-home"><i class="fa-brands fa-facebook-f"></i></a></li>
 							<li><a href="https://www.linkedin.com/in/saturnine-m-k-m%C3%A9dess%C3%A8-37393b17a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="twitter-home"><i class="fa-brands fa-linkedin-in"></i></a></li>
@@ -292,7 +256,7 @@
 				<div class="single-team-home">
 					<div class="img"><img src="assets/img/au/personel2.jpg" class="img-fluid" alt=""></div>
 					<div class="team-content-home">
-						<h3>BOGNON Mahougon Léobard</h3>
+						<h5>BOGNON Mahougon Léobard</h5>
 						<p>Directeur des Fonctions Transversales</p>
 						<ul class="social-home">
 							<li><a href="https://www.facebook.com/share/1AByy42uRX/" class="facebook-home"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -306,7 +270,7 @@
 				<div class="single-team-home">
 					<div class="img"><img src="assets/img/au/personel4.jpg" class="img-fluid" alt=""></div>
 					<div class="team-content-home">
-						<h3>KOUGBLENOU do capio Vianio</h3>
+						<h5>KOUGBLENOU do capio Vianio</h5>
 						<p>Directeur des Stratégies Partenariat et Opérations</p>
 						<ul class="social-home">
 							<li><a href="https://www.facebook.com/share/161wjKbwcu/" class="facebook-home"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -431,113 +395,7 @@
 		</div>
 	</div>
 </section>
-<!-- END BLOG -->
 
-<!-- START QUOTE -->
-
-<!-- END QUOTE -->
-
-<!-- START TESTIMONIAL -->
-<!-- <section class="testimonial-demo section-padding">
-	<div class="container">
-		<div class="section-title text-center wow zoomIn">
-			<h2>Chorbi Reviews</h2>
-			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout established fact that a reader will.</p>
-		</div>
-		<div class="row">
-			<div class="col-lg-12">
-				<div id="testimonial-slider" class="owl-carousel">
-					<div class="testimonial">
-						<div class="testimonial_content">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor.</p>
-						</div>
-						<div class="testi_pic_title tpt_one">
-							<div class="pic">
-								<img src="assets/img/testimonial/img-1.jpg" alt="">
-							</div>
-							<h4>James Clayton</h4>
-							<small class="post">- Design Expert</small>
-						</div>
-					</div>
-					<div class="testimonial">
-						<div class="testimonial_content">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor.</p>
-						</div>
-						<div class="testi_pic_title tpt_two">
-							<div class="pic">
-								<img src="assets/img/testimonial/img-2.jpg" alt="">
-							</div>
-							<h4>James Simmons</h4>
-							<small class="post">- Marketing Expert</small>
-						</div>
-					</div>
-					<div class="testimonial">
-						<div class="testimonial_content">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor.</p>
-						</div>
-						<div class="testi_pic_title tpt_three">
-							<div class="pic">
-								<img src="assets/img/testimonial/img-3.jpg" alt="">
-							</div>
-							<h4>Alex feroundo</h4>
-							<small class="post">- Founder</small>
-						</div>
-					</div>
-					<div class="testimonial">
-						<div class="testimonial_content">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor.</p>
-						</div>
-						<div class="testi_pic_title tpt_one">
-							<div class="pic">
-								<img src="assets/img/testimonial/img-4.jpg" alt="">
-							</div>
-							<h4>Kallu Mastan</h4>
-							<small class="post">- Mastan group</small>
-						</div>
-					</div>
-					<div class="testimonial">
-						<div class="testimonial_content">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor.</p>
-						</div>
-						<div class="testi_pic_title tpt_two">
-							<div class="pic">
-								<img src="assets/img/testimonial/img-2.jpg" alt="">
-							</div>
-							<h4>Devid max</h4>
-							<small class="post">- Max iNC</small>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section> -->
-<!-- END TESTIMONIAL -->
 
 
 

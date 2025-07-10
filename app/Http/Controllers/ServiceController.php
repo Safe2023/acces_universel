@@ -57,12 +57,17 @@ class ServiceController extends Controller
     {
         return view("partial.apropos");
     }
-      public function comptabilite()
+    public function comptabilite()
     {
         return view("partial.comptabilite");
-    }  public function informatique()
+    }
+    public function informatique()
     {
         return view("partial.informatique");
+    }
+    public function culture()
+    {
+        return view("partial.culture");
     }
     public function index()
     {

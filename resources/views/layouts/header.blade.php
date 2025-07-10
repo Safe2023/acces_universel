@@ -647,6 +647,8 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="/informatique">Informatique</a></li>
                                 <li><a class="dropdown-item" href="/comptabilite">Conseil en Développement</a></li>
+                                <li><a class="dropdown-item" href="/culture">Industries Culturelles et Créatives </a></li>
+
                             </ul>
                         </li>
                         <a class="nav-link" href="/actualite">Actualités</a>
@@ -691,6 +693,7 @@
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="/informatique">Informatique</a></li>
                 <li><a class="dropdown-item" href="/comptabilite">Conseil en Développement</a></li>
+                <li><a class="dropdown-item" href="/culture">Industries Culturelles et Créatives </a></li>
             </ul>
         </li>
         <a href="/actualite">
