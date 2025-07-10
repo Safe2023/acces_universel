@@ -45,7 +45,7 @@
 			<div class="fw_al_007_slide">
 				<h3 data-animation="animated flipInX">Allons-y maintenant</h3>
 				<h1 data-animation="animated flipInX">Votre meilleure agence numérique</h1>
-				<p data-animation="animated flipInX">Ensemble. Nous pouvons façonner un avenir meilleur.</p>
+				<p data-animation="animated flipInX">Ensemble, nous pouvons façonner un avenir meilleur.</p>
 				<a href="/apropos" data-animation="animated flipInX">En savoir plus</a>
 			</div>
 		</div>
@@ -61,7 +61,7 @@
 		<span class="fa fa-angle-right" aria-hidden="true"></span>
 		<span class="sr-only">Next</span>
 	</a>
-</div> 
+</div>
 
 <section class="feature section-padding mt-5">
 	<div class="container">
@@ -95,7 +95,7 @@
 					<div class="mb-4 icones logo">
 						<i class="fas fa-lightbulb"></i>
 					</div>
-					<h4>Démrache</h4>
+					<h4>Démarche</h4>
 					<p>
 						Identifier les enjeux de developpement<br>
 						Susciter des debats autour<br>
@@ -185,14 +185,14 @@
 				<!-- SLIDE 1 -->
 				<div class="carousel-item active">
 					<div class="row">
-						
+
 						<div class="col-md-4">
 							<div class="single_service ss_five text-center">
 								<img src="assets/img/service-icon/seo.png" alt="" />
 								<h3>Conception d’Application web et Mobile</h3>
 								<p class="short-text">
 									Nous concevons et développons des applications web et mobiles innovantes, adaptées aux besoins spécifiques
-									<br> <a href="#" id="voirplus">voir plus</a>
+									{{-- <br> <a href="#" id="voirplus">voir plus</a> --}}
 								</p>
 								<p id="pole" style="display: none;">
 									Nous concevons et développons des applications web et mobiles innovantes, adaptées aux besoins spécifiques de nos clients, leur facilitant ainsi la gestion et le management de leurs projets/programmes.
@@ -202,7 +202,7 @@
 								</p>
 							</div>
 						</div>
-	
+
 						<div class="col-md-4">
 							<div class="single_service ss_five text-center">
 								<img src="assets/img/service-icon/media.png" alt="" />
@@ -210,7 +210,7 @@
 								<p>Nous promouvons des initiatives intégrant les dimensions environnementales et sociales, inscrivant ainsi vos projets dans une dynamique de durabilité et de responsabilité sociétale.</p>
 							</div>
 						</div>
-	
+
 						<div class="col-md-4">
 							<div class="single_service ss_five text-center">
 								<img src="assets/img/service-icon/backlink.png" alt="" />
@@ -220,7 +220,7 @@
 						</div>
 						</div>
 					</div>
-					
+
 					<!-- SLIDE 2 -->
 					<div class="carousel-item">
 						<div class="row">

@@ -587,7 +587,7 @@
                 <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
                     <div class="single-top-contact">
                         <i class="fa fa-home"></i>
-                        <h4><strong>91718686 / 97138302</strong></h4>
+                        <h4><strong>0191718686 / 0197138302</strong></h4>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
@@ -606,7 +606,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://wa.me/2290191718686" class="top_f_whatsapp" target="_blank" rel="noopener noreferrer">
+                                <a href="https://wa.me/22991718686" class="top_f_whatsapp" target="_blank" rel="noopener noreferrer">
                                     <i class="fa-brands fa-whatsapp"></i>
                                 </a>
                             </li>
@@ -616,12 +616,12 @@
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
                             </li>
-                            <li>
+                            {{-- <li>
                                 <a href="https://accesuniversel.bj/ "
                                     class="top_f_envelope" target="_blank" rel="noopener noreferrer">
                                     <i class="bi bi-globe"></i>
                                 </a>
-                            </li>
+                            </li> --}}
                         </ul>
 
                     </div>
