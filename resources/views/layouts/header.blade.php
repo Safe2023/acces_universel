@@ -730,7 +730,7 @@
             <div class="row">
                 <div class="col-lg-3 col-sm-6 col-xs-12">
                     <div class="footer_logo">
-                        <img src="assets/img/au/logo_01.png" alt="" />
+                        <img src="assets/img/au/logo_04-removebg-preview.png" alt="Logo" height="40" alt="" />
                         <p>Nous serons ravis de vous accueillir dans nos locaux.</p>
                     </div>
                     <div class="social_profile">
@@ -752,25 +752,18 @@
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
                             </li>
-                            <li>
-                                <a href="https://accesuniversel.bj/"
-                                    class="top_f_envelope" target="_blank">
-                                    <i class="bi bi-globe"></i>
-                                </a>
-                            </li>
                         </ul>
                     </div>
 
                 </div>
                 <div class="col-lg-3 col-sm-6 col-xs-12">
                     <div class="single_footer single_footer_top_one">
-                        <h4>Accès Universel</h4>
+                        <h4>ACCES UNIVERSEL</h4>
                         <ul>
-                            <li><a href="/actualite">Prochain rendez-vous</a></li>
-                            <li><a href="/comptabilite">Conseil en Développement</a></li>
-                            <li><a href="/informatique">formation</a></li>
-                            <li><a href="/actualite">Événements</a></li>
-
+                            <li><a href="/">Accueil</a></li>
+                            <li><a href="/apropos">A propos</a></li>
+                            <li><a href="/actualite">Actualités</a></li>
+                            <li><a href="/contact">Contactez-nous</a></li>
                         </ul>
                     </div>
                 </div>
@@ -778,10 +771,10 @@
                     <div class="single_footer single_footer_top">
                         <h4>Liens rapides</h4>
                         <ul>
-                            <li><a href="/">Accueil</a></li>
-                            <li><a href="/apropos">A propos</a></li>
+                            <li><a href="/formation">formation</a></li>
                             <li><a href="/informatique">Informatique</a></li>
-                            <li><a href="/contact">Contactez-nous</a></li>
+                            <li><a href="/comptabilite">Conseil en Développement</a></li>
+                            <li><a href="#">Industries Culturelles et Créatives</a></li>
                         </ul>
                     </div>
                 </div>

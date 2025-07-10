@@ -112,7 +112,7 @@
     <div class="container">
         <div class="row">
             <div class="section-title text-center mb-2">
-                <h2 class="">Solutions Informatiques Professionnelles</h2>
+                {{-- <h2 class="">Solutions Informatiques Professionnelles</h2> --}}
                 <p class="paragraph">
                     Chez <strong>ACCES UNIVERSEL SARL</strong>, nous comprenons que l’informatique est un levier stratégique pour toute organisation moderne.
                     C’est pourquoi nous vous accompagnons dans la conception, la mise en œuvre et la maintenance de solutions informatiques robustes, innovantes et adaptées à vos besoins. De la gestion des systèmes d'information à la cybersécurité, en passant par le développement web et logiciel, notre équipe d’experts vous guide dans votre transformation numérique.
@@ -202,13 +202,13 @@
 
             </div>
         </div>
-       
+
     </div>
 </div>
 
 
  <div class="text-center mt-5 mb-5">
             <h4 class="mb-3">Besoin d’un accompagnement ou d'un conseil en Développement & Assistance Technique?</h4>
-            <a href="https://wa.me/2290191718686" target="_blank" class="btn btn-lg" style="background-color: #F7921D; color: white;">Contactez-nous</a>
+            <a href="https://wa.me/22991718686" target="_blank" class="btn btn-lg" style="background-color: #F7921D; color: white;">Contactez-nous</a>
         </div>
 @endsection

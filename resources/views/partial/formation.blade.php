@@ -14,7 +14,7 @@
                     <ul class="clearfix">
                         <li><a href="{{url('/')}}">Accueil</a></li>
                         <li><i class="fa fa-angle-double-right" aria-hidden="true"></i></li>
-                        <li class="active">Formation</li>
+                        <li class="active">Formations</li>
                     </ul>
                 </div>
             </div>
@@ -29,7 +29,7 @@
     <div class="row">
         <div class="p-4 mb-3 bg-body-tertiary rounded">
             <h4 class="fst-italic text-center">Formation & Education</h4>
-            <p class="mb-0 text-center">Nous concevons et soutenons des projets axés sur la durabilité environnementale et sociale.</p>
+            {{-- <p class="mb-0 text-center">Nous concevons et soutenons des projets axés sur la durabilité environnementale et sociale.</p> --}}
         </div>
     </div>
     <div class="row g-5">
@@ -91,7 +91,7 @@
                                 </button>
 
                                 <!-- Bouton de réservation -->
-                                <a href="https://wa.me/2290191718686" class="btn subs btn-sm">Réserver <i class="bi bi-bag ms-1"></i></a>
+                                <a href="https://wa.me/22991718686" class="btn subs btn-sm">Réserver <i class="bi bi-bag ms-1"></i></a>
                             </div>
                         </div>
                     </div>
@@ -175,15 +175,12 @@
                             <div class="modal-footer bg-white rounded-bottom-4">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
 
-                                <a href="https://wa.me/2290191718686"
+                                <a href="https://wa.me/22991718686"
                                     onclick="payerFormation('{{ $formation->id }}', '{{ $formation->frais_dinscription }}', '{{ $formation->nom }}')"
                                     class="btn subs btn-sm">
                                     Réserver cette formation
                                 </a>
-
-
                             </div>
-
                         </div>
                     </div>
                 </div>

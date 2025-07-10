@@ -12,7 +12,7 @@
     background: #fff !important;
     color: #F7921D !important;
     border: 1px solid #fc9400;
-  
+
   }
 
   .logo {
@@ -52,7 +52,6 @@
       opacity: 0.85;
     }
   }
-</style>
 </style>
 
 <div class="back-to-top"></div>

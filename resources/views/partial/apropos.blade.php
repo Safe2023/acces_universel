@@ -42,7 +42,7 @@
     <!-- Vidéo -->
     <div class="col-md-6">
       <div class="video-container rounded overflow-hidden border border-2">
-        <iframe class="w-100 rounded" height="400" src="https://www.youtube.com/embed/alswD2tCc_Q" title="Présentation Accès Universel" frameborder="0" allowfullscreen></iframe>
+        <iframe class="w-100 rounded" height="400" src="#" title="Présentation Accès Universel" frameborder="0" allowfullscreen></iframe>
       </div>
       <p class="mt-3 text-center text-muted">
         Découvrez notre univers en vidéo pour mieux comprendre ce que nous faisons et pourquoi nous le faisons avec passion.
@@ -82,21 +82,21 @@
     <div class="col-md-6">
       <div class="h-100 p-5 bg-body-tertiary border rounded-3">
         <h2 class="oigtr">INNOVATION</h2>
-        <p class="text-center">Grâce à nos programmes d’incubation et d’accélération, nous stimulons l'innovation au sein de votre entreprise, renforçant ainsi votre compétitivité et votre position de leader sur votre marché.</p>
+        <p class="text-center" style="text-align: justify;">Grâce à nos programmes d’incubation et d’accélération, nous stimulons l'innovation au sein de votre entreprise, renforçant ainsi votre compétitivité et votre position de leader sur votre marché.</p>
 
       </div>
     </div>
     <div class="col-md-6">
       <div class="h-100 p-5 bg-body-tertiary border rounded-3">
         <h2 class="oigtr">Impartialité</h2>
-        <p class="text-center">Nous garantissons une totale impartialité dans la gestion de chacun de nos projets. Nos décisions sont guidées uniquement par la qualité, l’objectivité et les besoins réels de nos clients.</p>
+        <p class="text-center" style="text-align: justify;">Nous garantissons une totale impartialité dans la gestion de chacun de nos projets. Nos décisions sont guidées uniquement par la qualité, l’objectivité et les besoins réels de nos clients.</p>
 
       </div>
     </div>
     <div class="col-md-6 mt-3">
       <div class="h-100 p-5 bg-body-tertiary border rounded-3">
         <h2 class="oigtr">integrité</h2>
-        <p class="text-center">Nous créons des changements positifs tangibles et durables dans les communautés que nous servons,
+        <p class="text-center" style="text-align: justify;">Nous créons des changements positifs tangibles et durables dans les communautés que nous servons,
           en mesurant et en maximisant nos contributions à la transformation sociale, économique et environnementale</p>
 
       </div>
@@ -104,7 +104,7 @@
     <div class="col-md-6 mt-3">
       <div class="h-100 p-5 bg-body-tertiary border rounded-3">
         <h2 class="oigtr">Impact</h2>
-        <p class="text-center">Nous croyons en une entreprise qui construit, qui élève, qui inspire.
+        <p class="text-center" style="text-align: justify;">Nous croyons en une entreprise qui construit, qui élève, qui inspire.
           Une entreprise qui agit avec cœur et conscience, pour générer un impact social, humain et durable.</p>
 
       </div>

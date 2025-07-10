@@ -23,11 +23,13 @@ class ServiceController extends Controller
             'massage' => 'required',
 
         ]);
-     
+
         try {
-            Mail::to('beresaf@gmail.com')->send(new EnvoieMail($request->all()));
+            Mail::to('contact@accesuniversel.bj')->send(new EnvoieMail($request->all()));
             return redirect()->back()->with('success', 'Votre message a bien été envoyé !');
         } catch (\Throwable $th) {
+            dd($th);
+            // Log the error or handle it as needed
             return back()->with("error", "Une erreur s'est produit. Veuillez reesayer plus tard.");
         }
     }
@@ -50,7 +52,7 @@ class ServiceController extends Controller
     public function formation()
     {
         return view("partial.formation");
-    } 
+    }
     public function apropos()
     {
         return view("partial.apropos");

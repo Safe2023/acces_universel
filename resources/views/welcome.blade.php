@@ -336,7 +336,7 @@
 						<h4>1</h4>
 					</div>
 					<h3>Planifier et créer</h3>
-					<p>Tout commence par une écoute attentive de vos besoins.On analyse, on structure, on imagine des solutions qui ont du sens.Puis, place à la création : maquettes, idées, concepts… On donne forme à votre vision.</p>
+					<p style="text-align: justify">Tout commence par une écoute attentive de vos besoins.On analyse, on structure, on imagine des solutions qui ont du sens.Puis, place à la création : maquettes, idées, concepts… On donne forme à votre vision.</p>
 				</div>
 			</div><!-- END COL -->
 			<div class="col-lg-4 col-sm-4 col-xs-12">
@@ -345,7 +345,7 @@
 						<h4>2</h4>
 					</div>
 					<h3>Développer et tester</h3>
-					<p>Nos outils ? Code propre, bonnes pratiques, réactivité.
+					<p style="text-align: justify">Nos outils ? Code propre, bonnes pratiques, réactivité.
 						Avant toute mise en ligne, tout est testé, optimisé, vérifié pour garantir un résultat fiable et performant.</p>
 				</div>
 			</div><!-- END COL -->
@@ -355,7 +355,7 @@
 						<h4>3</h4>
 					</div>
 					<h3>Faire vivre</h3>
-					<p>Nous vous accompagnons pour l’améliorer, l’enrichir, le faire évoluer au fil du temps.
+					<p style="text-align: justify">Nous vous accompagnons pour l’améliorer, l’enrichir, le faire évoluer au fil du temps.
 						Votre succès est notre priorité.</p>
 				</div>
 			</div><!-- END COL -->
@@ -373,54 +373,55 @@
 		</div>
 		<div class="row">
 			@foreach ($actualites as $actualite)
-			<div class="col-md-4 col-sm-6 mb-4">
-				<div class="card team-card shadow-sm">
-					<img src="{{ asset($actualite->image) }}" class="card-img-top" alt="Image de l'actualité">
-					<div class="card-body">
-						<span>
-							{{ \Carbon\Carbon::parse($actualite->date)->format('M d, Y') }} |
-							<a href="#" class="btn">{{ $actualite->titre }}</a>
-						</span>
-						<p class="card-text small">{{ Str::limit($actualite->description, 100) }}</p>
-						<div class="d-flex justify-content-end">
-							<button class="btn subs btn-sm" data-bs-toggle="modal" data-bs-target="#modal-{{ $actualite->id }}">
-								Details <span><i class="bi bi-arrow-90deg-up"></i></span>
-							</button>
-						</div>
-					</div>
-				</div>
+                <div class="col-md-4 col-sm-6 mb-4 d-flex">
+                    <div class="card team-card shadow-sm flex-fill d-flex flex-column">
+                        <img src="{{ asset($actualite->image) }}" class="card-img-top" alt="Image de l'actualité">
+                        <div class="card-body d-flex flex-column">
+                            <span>
+                                {{ \Carbon\Carbon::parse($actualite->date)->format('M d, Y') }} |
+                                <a href="#" class="btn">{{ $actualite->titre }}</a>
+                            </span>
 
-			</div>
+                            <p class="card-text small flex-grow-1">{{ Str::limit($actualite->description, 100) }}</p>
 
-			<!-- Modal -->
-			<div class="modal fade" id="modal-{{ $actualite->id }}" tabindex="-1" aria-labelledby="modalLabel-{{ $actualite->id }}" aria-hidden="true">
-				<div class="modal-dialog modal-lg modal-dialog-centered">
-					<div class="modal-content">
-						<div class="modal-body p-4">
-							<div class="row">
-								<!-- Image à gauche -->
-								<div class="col-md-5">
-									<img src="{{ asset($actualite->image) }}" alt="Image" class="img-fluid rounded mb-3">
-									<div class="small text-muted text-center" style="font-size: 20px;">
-										<span class="">{{ \Carbon\Carbon::parse($actualite->date)->format('d/m/Y') }}</span>
+                            <div class="d-flex justify-content-end mt-auto">
+                                <button class="btn subs btn-sm" data-bs-toggle="modal" data-bs-target="#modal-{{ $actualite->id }}">
+                                    Details <span><i class="bi bi-arrow-90deg-up"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-									</div>
-								</div>
+                <!-- Modal -->
+                <div class="modal fade" id="modal-{{ $actualite->id }}" tabindex="-1" aria-labelledby="modalLabel-{{ $actualite->id }}" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body p-4">
+                                <div class="row">
+                                    <!-- Image à gauche -->
+                                    <div class="col-md-5">
+                                        <img src="{{ asset($actualite->image) }}" alt="Image" class="img-fluid rounded mb-3">
+                                        <div class="small text-muted text-center" style="font-size: 20px;">
+                                            <span class="">{{ \Carbon\Carbon::parse($actualite->date)->format('d/m/Y') }}</span>
 
-								<!-- Détails à droite -->
-								<div class="col-md-7">
-									<h5 class="mb-2 text-center " style="color: #f99828;">{{ $actualite->titre }}</h5>
-									<p>{{ $actualite->description_complete }}</p>
-								</div>
-							</div>
-						</div>
+                                        </div>
+                                    </div>
 
-						<div class="modal-footer border-top-0">
-							<button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Fermer</button>
-						</div>
-					</div>
-				</div>
-			</div>
+                                    <!-- Détails à droite -->
+                                    <div class="col-md-7">
+                                        <h5 class="mb-2 text-center " style="color: #f99828;">{{ $actualite->titre }}</h5>
+                                        <p>{{ $actualite->description_complete }}</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer border-top-0">
+                                <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 			@endforeach
 		</div>
 

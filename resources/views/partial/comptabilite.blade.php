@@ -41,7 +41,7 @@
     line-height: 1.6;
     margin-bottom: 0;
   }
-  
+
 </style>
 
 <section class="section-top breadcrumb-area" style="background-image: url(assets/img/au/comptabilite.png);  background-size:cover; background-position: center center;">
@@ -56,7 +56,7 @@
           <ul class="clearfix">
             <li><a href="{{url('/')}}">Accueil</a></li>
             <li><i class="fa fa-angle-double-right" aria-hidden="true"></i></li>
-            <li class="active">Conseil/Développement</li>
+            <li class="active">Conseil en développement</li>
           </ul>
         </div>
       </div>
@@ -80,82 +80,84 @@
   <div class="container">
     <div class="row g-4">
 
-      <div class="col-md-4">
-        <div class="service-card text-center p-4">
+      <div class="col-md-4 d-flex">
+        <div class="service-card text-center p-4 h-100 d-flex flex-column w-100">
           <div class="icon-circle mb-3">
             <i class="fas fa-balance-scale"></i>
           </div>
-          <h5 class="fw-bold"> Conseil stratégique en développement</h5>
-          <p class="text-muted text-start custom-paragraph">Appui à la formulation de projets innovants <br />
+          <h5 class="fw-bold">Conseil stratégique en développement</h5>
+          <p class="text-muted text-start custom-paragraph flex-grow-1">
+            Appui à la formulation de projets innovants<br />
             Structuration des actions autour de la durabilité, la gouvernance et la performance
           </p>
         </div>
       </div>
-  <div class="col-md-4">
-        <div class="service-card text-center p-4">
+
+      <div class="col-md-4 d-flex">
+        <div class="service-card text-center p-4 h-100 d-flex flex-column w-100">
           <div class="icon-circle mb-3">
             <i class="fas fa-calculator"></i>
           </div>
-          <h5 class="fw-bold">Intermédiation et gestion des coopérants volontaires
-          </h5>
-          <p class="text-muted text-start custom-paragraph">Mobilisation et encadrement des volontaires nationaux/internationaux<br />
+          <h5 class="fw-bold">Intermédiation et gestion des coopérants volontaires</h5>
+          <p class="text-muted text-start custom-paragraph flex-grow-1">
+            Mobilisation et encadrement des volontaires nationaux/internationaux<br />
             Suivi de mission et évaluation d’impact sur le terrain
           </p>
         </div>
       </div>
-     
-      <div class="col-md-4">
-        <div class="service-card text-center p-4">
+
+      <div class="col-md-4 d-flex">
+        <div class="service-card text-center p-4 h-100 d-flex flex-column w-100">
           <div class="icon-circle mb-3">
             <i class="fas fa-user-tie"></i>
           </div>
-          <h5 class="fw-bold">Formation et renforcement des capacités
-          </h5>
-          <p class="text-muted text-start custom-paragraph">Formation en développement web et mobile<br />
+          <h5 class="fw-bold">Formation et renforcement des capacités</h5>
+          <p class="text-muted text-start custom-paragraph flex-grow-1">
+            Formation en développement web et mobile<br />
             Formation en suivi et évaluation de projets<br />
             Ateliers personnalisés en gestion de projet et innovation sociale
           </p>
         </div>
       </div>
 
-      <div class="col-md-4">
-        <div class="service-card text-center p-4">
+      <div class="col-md-4 d-flex">
+        <div class="service-card text-center p-4 h-100 d-flex flex-column w-100">
           <div class="icon-circle mb-3">
             <i class="fas fa-users"></i>
           </div>
           <h5 class="fw-bold">Projets durables</h5>
-          <p class="text-muted text-start custom-paragraph">Intégration des enjeux sociaux et environnementaux dans vos projets<br />Appui à la mise en œuvre d’initiatives responsables et à impact</p>
+          <p class="text-muted text-start custom-paragraph flex-grow-1">
+            Intégration des enjeux sociaux et environnementaux dans vos projets<br />
+            Appui à la mise en œuvre d’initiatives responsables et à impact
+          </p>
         </div>
       </div>
 
-      <div class="col-md-4">
-        <div class="service-card text-center p-4">
+      <div class="col-md-4 d-flex">
+        <div class="service-card text-center p-4 h-100 d-flex flex-column w-100">
           <div class="icon-circle mb-3">
             <i class="fas fa-file-contract"></i>
           </div>
-          <h5 class="fw-bold"> Consultation en analyse de projets</h5>
-          <p class="text-muted text-start custom-paragraph">Études de faisabilité et évaluation d'impact<br />
+          <h5 class="fw-bold">Consultation en analyse de projets</h5>
+          <p class="text-muted text-start custom-paragraph flex-grow-1">
+            Études de faisabilité et évaluation d'impact<br />
             Analyse des risques et planification stratégique
           </p>
         </div>
       </div>
 
-     <!--  <div class="col-md-4">
-        <div class="service-card text-center p-4">
-          <div class="icon-circle mb-3">
-            <i class="fas fa-gavel"></i>
-          </div>
-          <h5 class="fw-bold">Conseil fiscal & juridique</h5>
-          <p class="text-muted text-start custom-paragraph">Optimisation fiscale et accompagnement juridique.</p>
-        </div>
-      </div> -->
-      <div class="text-center mt-5">
+      <!-- Bouton contact -->
+      <div class="col-12 text-center mt-5">
         <h4 class="mb-3">Besoin d’un accompagnement informatique personnalisé ?</h4>
-        <a href="https://wa.me/2290191718686" target="_blank" class="btn btn-lg" style="background-color: #F7921D; color: white;">Contactez-nous</a>
+        <a href="https://wa.me/2290191718686" target="_blank" class="btn btn-lg" style="background-color: #F7921D; color: white;">
+          Contactez-nous
+        </a>
       </div>
+
     </div>
   </div>
 </section>
+
 
 
 @endsection
