@@ -276,7 +276,7 @@
 			<div class="col-md-12 text-center">
 				<div class="section-title">
 					<h2>Une équipe engagée, compétente et passionnée.</h2>
-					<p>Derrière chaque projet, il y a des femmes et des hommes unis par la même vision : vous offrir des solutions innovantes, performantes et humaines.</p>
+					<p>Derrière chaque projet, il y a des femmes et des hommes unis par la même vision pour vous offrir des solutions innovantes, performantes et humaines.</p>
 				</div>
 			</div>
 		</div>
