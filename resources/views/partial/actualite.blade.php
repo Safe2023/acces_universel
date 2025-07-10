@@ -90,6 +90,36 @@
             </div>
             @endforeach
         </div>
+        @if ($actualites->lastPage() > 1)
+    <nav aria-label="Page navigation">
+        <ul class="pagination col-12 d-flex justify-content-center">
+
+            <li class="page-item {{ $actualites->onFirstPage() ? 'disabled' : '' }}">
+                <a class="page-link"
+                   href="{{ $actualites->appends(request()->input())->previousPageUrl() ?? '#' }}"
+                   tabindex="-1">Previous</a>
+            </li>
+
+            @for ($i = 1; $i <= $actualites->lastPage(); $i++)
+                <li class="page-item {{ $actualites->currentPage() == $i ? 'active' : '' }}">
+                    <a class="page-link"
+                       href="{{ $actualites->url($i) }}?{{ http_build_query(request()->except('page')) }}">
+                        {{ $i }}
+                    </a>
+                </li>
+            @endfor
+
+            <li class="page-item {{ !$actualites->hasMorePages() ? 'disabled' : '' }}">
+                <a class="page-link"
+                   href="{{ $actualites->appends(request()->input())->nextPageUrl() ?? '#' }}">
+                    Next
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+@endif
+
     </div>
 </section>
 @endsection

@@ -11,7 +11,7 @@ class ActualiteController extends Controller
     /**
      * Display a listing of the resource.
      */
-  
+
 
     /**
      * Show the form for creating a new resource.
@@ -26,7 +26,7 @@ class ActualiteController extends Controller
      */
     public function store(Request $request)
     {
-      
+
         $request->validate([
             'image' => 'required|file|mimes:jpeg,png,jpg,gif|max:5020',
         ]);
@@ -36,7 +36,7 @@ class ActualiteController extends Controller
 
         $image->move(public_path('/uploads/actualite/'), $image_name);
 
-    
+
         Actualite::create([
             'image' => '/uploads/actualite/' . $image_name,
             'date' => $request->date,
@@ -44,24 +44,23 @@ class ActualiteController extends Controller
             'description' => $request->description,
             'description_complete' => $request->description_complete,
         ]);
-    
+
         return redirect()->back()->with('success', 'Actualité ajoutée avec succès');
     }
-    
+
     /**
      * Display the specified resource.
      */
     public function index()
     {
-        $actualites = Actualite::latest()->take(3)->get(); 
+        $actualites = Actualite::latest()->take(3)->get();
         return view('welcome', compact('actualites'));
     }
    public function actualite()
-    {
-        $actualites = Actualite::latest()->get(); 
-        return view('partial.actualite', compact('actualites'));
-    }
-        
+{
+    $actualites = Actualite::latest()->paginate(6); 
+    return view('partial.actualite', compact('actualites'));
+}
     /**
      * Show the form for editing the specified resource.
      */
@@ -114,7 +113,9 @@ class ActualiteController extends Controller
     }
     public function table()
     {
+        $query = Actualite::query();
         $table = Actualite::all();
-        return view('table', ['table' => $table]);
+        $actualite = $query->paginate(10);
+        return view('table', compact('table', 'actualite'));
     }
 }
