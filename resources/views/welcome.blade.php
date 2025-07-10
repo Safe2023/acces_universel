@@ -132,32 +132,25 @@
 <section data-stellar-background-ratio="0.3" class="counter_area counter_feature">
 	<div class="container">
 		<div class="row text-center">
-			<div class="col-lg-3 col-sm-6 col-xs-12">
+			<div class="col-lg-4 col-sm-6 col-xs-12">
 				<div class="single-project single-project-one">
 					<span class="ti-user"></span>
-					<h2 class="counter-num">+2652</h2>
-					<h4>Clients satisfaits</h4>
+					<h2 class="counter-num">+60</h2>
+					<h4>clients satisfaits</h4>
 				</div>
 			</div>
-			<div class="col-lg-3 col-sm-6 col-xs-12">
+			<div class="col-lg-4 col-sm-6 col-xs-12">
 				<div class="single-project single-project-two">
 					<span class="ti-star"></span>
-					<h2 class="counter-num">1821</h2>
-					<h4>Des visites incroyables</h4>
+					<h2 class="counter-num">285</h2>
+					<h4>visites incroyables</h4>
 				</div>
 			</div><!-- END COL -->
-			<div class="col-lg-3 col-sm-6 col-xs-12">
+			<div class="col-lg-4 col-sm-6 col-xs-12">
 				<div class="single-project single-project-three">
 					<span class="ti-pencil-alt"></span>
-					<h2 class="counter-num">5660</h2>
-					<h4>En affaires</h4>
-				</div>
-			</div><!-- END COL -->
-			<div class="col-lg-3 col-sm-6 col-xs-12">
-				<div class="single-project single-project-four">
-					<span class="ti-support"></span>
-					<h2 class="counter-num">1259</h2>
-					<h4>Cas de support</h4>
+					<h2 class="counter-num">+10</h2>
+					<h4>partenaires</h4>
 				</div>
 			</div><!-- END COL -->
 		</div><!--- END ROW -->
@@ -285,8 +278,8 @@
 				<div class="single-team-home">
 					<div class="img"><img src="assets/img/au/DG_AU.jpg" class="img-fluid" alt=""></div>
 					<div class="team-content-home">
-						<h6>Saturnine M. K. Médessè</h6>
-						<p>Directrice</p>
+						<h3>Saturnine MICHOZOUNNOU</h3>
+						<p>Directrice Générale</p>
 						<ul class="social-home">
 							<li><a href="https://www.facebook.com/share/18xd2ziYZX/" class="facebook-home"><i class="fa-brands fa-facebook-f"></i></a></li>
 							<li><a href="https://www.linkedin.com/in/saturnine-m-k-m%C3%A9dess%C3%A8-37393b17a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="twitter-home"><i class="fa-brands fa-linkedin-in"></i></a></li>
@@ -372,11 +365,11 @@
 <!-- END PROCESS -->
 
 <!-- START BLOG -->
-<section id="blog" class="blog_area section-padding mt-5">
+<section id="blog" class="blog_area section-padding mt-5 pt-5">
 	<div class="container">
 		<div class="section-title text-center ">
 			<h2 class="defe">Dernières nouvelles</h2>
-			<p>Les actualités de ACCES UNIVERSEL</p>
+			{{-- <p>Les actualités de ACCES UNIVERSEL</p> --}}
 		</div>
 		<div class="row">
 			@foreach ($actualites as $actualite)
@@ -391,7 +384,7 @@
 						<p class="card-text small">{{ Str::limit($actualite->description, 100) }}</p>
 						<div class="d-flex justify-content-end">
 							<button class="btn subs btn-sm" data-bs-toggle="modal" data-bs-target="#modal-{{ $actualite->id }}">
-								Detail <span><i class="bi bi-arrow-90deg-up"></i></span>
+								Details <span><i class="bi bi-arrow-90deg-up"></i></span>
 							</button>
 						</div>
 					</div>
@@ -431,9 +424,9 @@
 			@endforeach
 		</div>
 
-		<div class="d-flex mt-5" style="justify-content:center;">
+		<div class="d-flex mt-2" style="justify-content:center;">
 
-			<a href="/actualite" class="btn subs btn-sm">Decouvrir plus de formations</a>
+			<a href="/actualite" class="btn subs btn-sm">Decouvrir plus d'actualités</a>
 		</div>
 	</div>
 </section>
