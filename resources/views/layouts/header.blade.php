@@ -578,54 +578,37 @@
                 line-height: 36px;
             }
         }
+
+
+        .label-scroll-content {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll-left 15s linear infinite;
+            font-size: 16px;
+            color: #F7921D;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
     </style>
     </head>
 
     <section class="logo-contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-top-contact">
-                        <i class="fa fa-home"></i>
-                        <h4><strong>0191718686 / 0197138302</strong></h4>
+                <div class="label-scroll-container">
+                    <div class="label-scroll-content">
+                        <strong>Notre entreprise est officiellement labellisé par l'État béninois – Gage de fiabilité et de qualité.</strong>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
-                    <div class="single-top-contact">
-                        <i class="fa fa-clock-o"></i>
-                        <h4><strong>Ouvert du lundi au vendredi : 08h - 18h</strong></h4>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
-                    <div class="top_social_profile">
-                        <ul>
-                            <li>
-                                <a href="https://www.facebook.com/profile.php?id=61553480523014&mibextid=ZbWKwL"
-                                    class="top_f_facebook" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://wa.me/22991718686" class="top_f_whatsapp" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa-brands fa-whatsapp"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/company/accesuniversel"
-                                    class="top_f_linkedin" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa-brands fa-linkedin-in"></i>
-                                </a>
-                            </li>
-                            {{-- <li>
-                                <a href="https://accesuniversel.bj/ "
-                                    class="top_f_envelope" target="_blank" rel="noopener noreferrer">
-                                    <i class="bi bi-globe"></i>
-                                </a>
-                            </li> --}}
-                        </ul>
 
-                    </div>
-                </div>
             </div>
         </div>
     </section>

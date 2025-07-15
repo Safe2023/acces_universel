@@ -31,7 +31,7 @@
 			<!-- Slide Text Layer -->
 			<div class="fw_al_007_slide">
 				<h3 data-animation="animated flipInX">Venez vers nous</h3>
-				<h1 data-animation="animated flipInX">Choisissez l'agence parfaite</h1>
+				<h1 data-animation="animated flipInX">Choisissez l'agence panafricaine</h1>
 				<p data-animation="animated flipInX">Nous sommes impatients de vous accueillir dans notre agence.</p>
 				<a href="/apropos" data-animation="animated flipInX">En savoir plus</a>
 			</div>
@@ -226,7 +226,7 @@
 
 <!--END SERVICE -->
 
-<!-- START TEAM -->
+<!-- partenaire -->
 <section class="our_team section-padding">
 	<div class="container">
 		<div class="row">
@@ -242,7 +242,7 @@
 				<div class="single-team-home">
 					<div class="img"><img src="assets/img/au/DG_AU.jpg" class="img-fluid" alt=""></div>
 					<div class="team-content-home">
-						<h5>Saturnine Mèdessè MICHOZOUNNOU</h5>
+						<h5>Mèdessè MICHOZOUNNOU</h5>
 						<p>Directrice générale</p>
 						<ul class="social-home">
 							<li><a href="https://www.facebook.com/share/18xd2ziYZX/" class="facebook-home"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -251,12 +251,12 @@
 						</ul>
 					</div>
 				</div>
-			</div><!-- END COL -->
+			</div>
 			<div class="col-lg-4 col-sm-6 col-xs-12">
 				<div class="single-team-home">
 					<div class="img"><img src="assets/img/au/personel2.jpg" class="img-fluid" alt=""></div>
 					<div class="team-content-home">
-						<h5>BOGNON Mahougon Léobard</h5>
+						<h5>Mahougon BOGNON</h5>
 						<p>Directeur des Fonctions Transversales</p>
 						<ul class="social-home">
 							<li><a href="https://www.facebook.com/share/1AByy42uRX/" class="facebook-home"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -265,12 +265,12 @@
 						</ul>
 					</div>
 				</div>
-			</div><!-- END COL -->
+			</div>
 			<div class="col-lg-4 col-sm-6 col-xs-12">
 				<div class="single-team-home">
 					<div class="img"><img src="assets/img/au/personel4.jpg" class="img-fluid" alt=""></div>
 					<div class="team-content-home">
-						<h5>KOUGBLENOU do capio Vianio</h5>
+						<h5>Gbena KOUGBLENOU</h5>
 						<p>Directeur des Stratégies Partenariat et Opérations</p>
 						<ul class="social-home">
 							<li><a href="https://www.facebook.com/share/161wjKbwcu/" class="facebook-home"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -279,14 +279,14 @@
 						</ul>
 					</div>
 				</div>
-			</div><!-- END COL -->
+			</div>
 
-		</div><!-- END ROW -->
-	</div><!-- END CONTAINER -->
+		</div>
+	</div>
 </section>
-<!-- END TEAM -->
+<!-- partenaire -->
 
-
+<!-- Processus de travail -->
 <section class="process_area section-padding">
 	<div class="container">
 		<div class="section-title text-center">
@@ -326,9 +326,9 @@
 		</div><!-- END ROW -->
 	</div><!-- END CONTAINER -->
 </section>
-<!-- END PROCESS -->
+<!-- Fin processus de travail -->
 
-<!-- START BLOG -->
+<!-- Dernières nouvelle -->
 <section id="blog" class="blog_area section-padding mt-5 pt-5">
 	<div class="container">
 		<div class="section-title text-center ">
@@ -394,11 +394,11 @@
 		</div>
 	</div>
 </section>
+<!-- Fin dernières nouvelle -->
 
 
 
-
-<!-- START COMPANY PARTNER LOGO  -->
+<!-- Nos partenaires -->
 <div class="partner-logo section-padding mt-5 mb-5">
 	<div class="container">
 		<div class="row">
@@ -415,10 +415,12 @@
 					<a href="#"><img src="assets/img/au/partenair6.jpeg" alt="image"></a>
 					<a href="#"><img src="assets/img/au/partenair7.jpeg" alt="image"></a>
 					<a href="#"><img src="assets/img/au/part.jpeg" alt="image"></a>
+					<a href="#"><img src="assets/img/au/un1.png" alt="image"></a>
+					<a href="#"><img src="assets/img/au/un2.jpg" alt="image"></a>
 				</div>
-			</div><!-- END COL  -->
-		</div><!--END  ROW  -->
-	</div><!-- END CONTAINER  -->
+			</div>
+		</div>
+	</div>
 </div>
 
 <script>
